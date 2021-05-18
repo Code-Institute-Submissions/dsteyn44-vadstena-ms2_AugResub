@@ -1,59 +1,148 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Vadstena Guide
+## UX
+ 
+### Strategy:
 
-Welcome USER_NAME,
+ Target market: 
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use.
 
-## Gitpod Reminders
+#### Client Goals
+- 
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+#### First time User Stories
+- As a first time User I want to be able to hear the bands music on the first page so that that I decide to follow.
+- As a first time User I want to see where they are playing and the dates so I can see if I am  able to go view the concert.
+- As a first time User I want to see what the band is about, who they are so I can decide this is something that i may like.
+- As a first time User I want to navigate easily throughout the site so that I can get to the pages efficently. 
 
-`python3 -m http.server`
+#### Frequent User
+- As a frequent user I want updates so that I can visit the website and it will keep me interested.
 
-A blue button should appear to click: _Make Public_,
+#### Festival organiser/ Concert organiser
 
-Another blue button should appear to click: _Open Browser_.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+#
 
-A blue button should appear to click: _Make Public_,
+## Features
 
-Another blue button should appear to click: _Open Browser_.
+I changed the features from the wireframes as they did not work very well with the responsiveness. Also I change the name of the gallery from "My Army" to "Skål" - which is more of a postive thank you to the fans. I left out the page for the narrative or storyline "The Legend" and just added it to the information about the band.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+Header
 
-To log into the Heroku toolbelt CLI:
+The Footer 
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- Links to social media platforms that are related to the product. Must be fixed and visible at all times so that the user can easily get to it. 
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidently make it public then you can create a new one with _Regenerate API Key_.
+The Home Page 
 
-## Updates Since The Instructional Video
+Our Story Page
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+Explore Page
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Features Left to Implement
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Structure:
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+#
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+## Skeleton
+The wireframes were designed using [Balsamiq](https://balsamiq.com/). 
+   Desktop   |    Tablet    |    Mobile    |
+|    :----:    |     :----:   |    :----:    |
+|[Home Page](wireframes/desktop-home.png)|[Home Page](wireframes/tablet-home.png)|[Home Page](wireframes/mobile-home.png)|
+|[The Fanwall Page](wireframes/desktop-fan-wall.png)|[The Fanwall Page](wireframes/tablet-fan-wall.png)|[The Fanwall Page](wireframes/mobile-fan-wall.png)|
+|[Fail Page](wireframes/desktop-fail.png)|[Fail Page](wireframes/tablet-fail-page.png)|[Fail Page](wireframes/mobile-fail-page.png)|
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+#
+## Surface
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+#### Colours
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Home page
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
----
+Our Story page
+ 
 
-Happy coding!
+Fail page
+
+
+#### Typography
+
+
+#### Images
+
+
+## Technologies Used
+
+- [HTML 5](https://en.wikipedia.org/wiki/HTML5) - Standard programing language.
+- [CSS 3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) - Standard programing language.
+- [BOOTSTRAP 4.1.3](https//bootstrrap.com)- Bootstrap is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites. This was used extenssively throughout the project for example the grid layout , navbar structures, dropdown menus, jumbotrons, modals, and dispay (media).
+- [JAVASCRIPT](https://en.wikipedia.org/wiki/JavaScript) - Programming language that conforms to the ECMAScript specification. This was used for the modals in conjuction with Bootstrap.
+- [GOOGLE FONTS](https://fonts.google.com/) - I added this the font that i used through out
+- [FONT AWESOME](https://fontawesome.com/) - I used this for all my icons eg: social links etc. 
+- [AFFINITY PHOTO](https://affinity.serif.com/en-us/) - This a helped me so some mock-ips and for the background images on the fail page.
+- [GITHUB](https://gitpod.io/) - IDE (Integrated Development Environment).
+- [GITPOD](github.com/) - The remote hosting platform.
+- [MOUNTAIN GOAT](https://www.mountaingoatsoftware.com/) - This was used to understand user stories.
+- PAGES - Apple generic word processing program/application.  
+- [W3 SCHOOLS](https://www.w3schools.com/) - I Found this very useful for clarification of clearfix  and inline block. 
+- [STACK OVERFLOW](https://stackoverflow.com/) - It is gennerally public platform, mainly used for coming up with scripte solutions. 
+- [MDZN](https://developer.mozilla.org/) - Resource tool for developers, by developers. I used this to assist with resizing my images.
+- [CHROME DEVELOPER TOOLS](https://developers.google.com/web/tools/chrome-devtools) - This was used to test out resposnsiveness and just for general trouble-shooting. Gives you real time feedback.
+- [RESPONSIVE WEB DESIGN](http://ami.responsivedesign.is/) - I used this to add to my mock-up for my README.md.
+
+#
+
+## Testing
+
+View the testing [here](Testing.md).
+
+#
+## Deployment
+
+
+### This project is hosted in GitHub Pages
+
+- On the menu on the top of the project’s repository on GitHub select Settings.
+- Scroll down to the GitHub Pages section.
+- Inside that section, click on the drop-down menu under Source and select Master Branch.
+- The page refreshes automatically and the website is now deployed.
+- The link to the webpage is just in the GitHub Pages section down below.
+- Only one branch has been used for this project.
+
+### To clone this project from GitHub:
+
+- Under the repository’s name, click Clone or download.
+- In the Clone with hTTPS section, copy the given URL.
+- In your IDE of choice, open Git Bash.
+- Change the current working directory to the location where you want the cloned directory to be made.
+- Type git clone, and then paste the URL copied from GitHub.
+- Press enter and the local clone will be created.
+
+### Google maps:
+
+- Under the repository’s name, click Clone or download.
+- In the Clone with hTTPS section, copy the given URL.
+- In your IDE of choice, open Git Bash.
+- Change the current working directory to the location where you want the cloned directory to be made.
+- Type git clone, and then paste the URL copied from GitHub.
+- Press enter and the local clone will be created.
+#
+## Credits
+
+### Content
+- Most of the content I got I sourced from the band's Facebook Page.
+- The rest of the written content I made up. 
+
+### Media
+- Images used in this site were obtained from either google or from the groups's page on facebook. I then modified some images in Affinity.
+- Some of the links point to [Wikipedia](https://en.wikipedia.org/wiki/King_of_Asgard).
+
+
+### Acknowledgments
+- Precious Ijege for the mentor guidance and support.
+- The Code Institute tutor team, and specially Jo, for their help and patience.
+- My wife Sofia and children August and Adam.
+#
