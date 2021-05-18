@@ -1,5 +1,14 @@
 /*-------Fonts-------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /*-------Background and color-------*/
+.bg-front-container {
+    background: url('../images/koa-band.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    min-width: 100%;
+    overflow: hidden;
+}
+
 /*-------Navbar-------*/
 /*-------Home Page-------*/
 /*-------Our Story Page-------*/
