@@ -1,15 +1,34 @@
 /*-------Fonts-------*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /*-------Background and color-------*/
+/*Changed the color of the navbar*/
+.bg-navbar {
+    background-color: olivedrab;
+}
+
 .bg-front-container {
-    background: url('../images/poppy-castle.png') no-repeat center center;
+    background: url('../images/castlesunset.jpg') no-repeat center center;
     background-size: cover;
     height: 100vh;
     min-width: 100%;
     overflow: hidden;
 }
 
+.bg--story {
+    background-color: chocolate;
+    height: 100vh;
+    min-width: 100%;
+}
+
+
+.bg-explore {
+    background-color: olivedrab;
+    height: 100vh;
+    min-width: 100%;
+}
+
 /*-------Navbar-------*/
+
 /*-------Home Page-------*/
 /*-------Our Story Page-------*/
 /*-------Explore Page-------*/
