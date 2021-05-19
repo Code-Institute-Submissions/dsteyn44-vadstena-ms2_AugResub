@@ -1,5 +1,13 @@
 /*-------Fonts-------*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Indie+Flower&family=Nosifer&family=Roboto&display=swap');
+/*-------Body-------*/
+
+body {
+ font-family: 'Berkshire Swash', cursive;
+ color: ivory;
+}
+
 /*-------Background and color-------*/
 /*Changed the color of the navbar*/
 .bg-navbar {
@@ -28,8 +36,28 @@
 }
 
 /*-------Navbar-------*/
+nav a h1 {
+    color: ivory;
+}
 
-/*-------Home Page-------*/
+/*-------Stack Overflow/toggler change-------*/
+
+#icon-size {
+    background-color: olivedrab;
+    color: ivory;
+    width: 50px;
+    height: 50px;
+}
+
+.navbar-toggler,
+.navbar-toggler:focus,
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
+/*-----Home Page-------*/
 /*-------Our Story Page-------*/
 /*-------Explore Page-------*/
 /*-------Footer Page-------*/
