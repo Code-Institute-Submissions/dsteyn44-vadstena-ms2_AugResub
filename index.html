@@ -4,74 +4,162 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <title>Vadstena Guide</title>
 </head>
-<body>
-<!--The Header-->
-   <nav class="navbar navbar-expand-lg navbar-light bg-navbar">
-  <a class="navbar-brand text-navbar" href="#"><h1>Vadstena Guide</h1></a>
-  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    <span><img id="icon-size" src="./assets/images/dots.svg" alt="five_dots"></span>
-  </button>
-  <div class="collapse navbar-collapse" id="navbarNav">
-    <ul class="navbar-nav">
-      <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Our Story</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Explore!</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact Us!</a>
-      </li>
-    </ul>
-  </div>
-</nav>
-<!--Home Page-->
-    <section class="bg-front-container">
 
+<body>
+    <!--The Header-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-navbar">
+        <a class="navbar-brand text-navbar" href="#">
+            <h1>Vadstena Guide</h1>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span><svg width="50px" height="50px" viewBox="0 0 3371 2384" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+                <g><path class="icon-color" d="M1812.84,1342.83c-84.341,84.341 -218.779,86.851 -300.028,5.602c-81.249,-81.25 -78.739,-215.687 5.601,-300.028c84.341,-84.34 218.779,-86.85 300.028,-5.601c81.249,81.249 78.739,215.687 -5.601,300.027Z" style="fill:ivory;"/>
+                <path class="icon-color" d="M1059.29,1356.9c-84.34,84.341 -218.778,86.851 -300.027,5.601c-81.25,-81.249 -78.74,-215.687 5.601,-300.027c84.34,-84.341 218.778,-86.85 300.027,-5.601c81.249,81.249 78.74,215.687 -5.601,300.027Z" style="fill:ivory;"/>
+                <path class="icon-color" d="M2566.19,1328.77c-84.341,84.341 -218.779,86.851 -300.028,5.601c-81.249,-81.249 -78.739,-215.687 5.601,-300.027c84.341,-84.341 218.779,-86.85 300.028,-5.601c81.249,81.249 78.739,215.687 -5.601,300.027Z" style="fill:ivory;"/>
+                <path d="M1826.9,589.628c-84.34,84.341 -218.778,86.85 -300.027,5.601c-81.25,-81.249 -78.74,-215.687 5.601,-300.027c84.34,-84.341 218.778,-86.851 300.027,-5.601c81.249,81.249 78.74,215.687 -5.601,300.027Z" style="fill:ivory;"/>
+                <path d="M1798.66,2102.16c-84.341,84.34 -218.778,86.85 -300.028,5.601c-81.249,-81.249 -78.739,-215.687 5.602,-300.027c84.34,-84.341 218.778,-86.851 300.027,-5.602c81.249,81.25 78.739,215.687 -5.601,300.028Z" style="fill:ivory;"/>
+            </g></svg></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><h5 id="home-txt-clr">Home</h5> <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Our Story</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Explore!</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact Us!</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!--Home Page-->
+<div class="container-fluid bg-home-container">
+            <!--<div class="container">
+                <div class="row">
+                    <div class="col">col</div>
+                    <div class="col">col</div>
+                    <div class="col">col</div>
+                </div>
+            -->
+                <!--Weekly event Slider Create card divs- credit to Basir Payenda-->
+  <!-- I have added a section as I do not want this influencing the rest of my mark-up-->
+<section class="slider-section">
+	<div class="container-slider">
+		<div class="cards">
+            <div class="card shadow">
+                <div class="img-card"></div>
+    <div class="card-content">
+    <h1>Monday</h1>
+    <p>Happy days</p>
+    </div>
+    </div>
+    <div class="card">
+				<img src="" alt="">
+    <div class="card-content">
+    <h1>Tuesday</h1>
+    <p>Happy days</p>
+    </div>
+    </div>
+    <div class="card">
+				<img src="" alt="">
+    <div class="card-content">
+    <h1>Wednesday</h1>
+    <p>Nostalgic Car</p>
+    </div>
+    </div>
+    <div class="card">
+				<img src="" alt="">
+    <div class="card-content">
+    <h1>Thursday</h1>
+    <p>Happy days</p>
+    </div>
+    </div>
+    <div class="card">
+				<img src="" alt="">
+    <div class="card-content">
+    <h1>Friday</h1>
+    <p>Happy days</p>
+    </div>
+    </div>
+    <div class="card">
+				<img src="" alt="">
+    <div class="card-content">
+    <h1>Saturday</h1>
+    <p>Happy days</p>
+    </div>
+    </div>
+    <div class="card">
+				<img src="" alt="">
+    <div class="card-content">
+    <h1>Sunday</h1>
+    <p>Happy days</p>
+    </div>
+    </div>
+    </div>
+    </div>
     </section>
-<!--Our Story Page-->
- <section>
-<div class="container-fluid bg--story">
-    <div class="container">
-  <div class="row">
-    <div class="col">col</div>
-    <div class="col">col</div>
-    <div class="col">col</div>
-    <div class="col">col</div>
-  </div>
-  <div class="row">
-    <div class="col-8">col-8</div>
-    <div class="col-4">col-4</div>
-  </div>
-</div>
-</div>
-    </section>
-<!--Explore Page-->
- <section>
-<div class="container-fluid bg-explore">
-    <div class="container">
-  <div class="row">
-    <div class="col">col</div>
-    <div class="col">col</div>
-    <div class="col">col</div>
-    <div class="col">col</div>
-  </div>
-</div>
-    </section>
-<!--Footer-->
- <section>
-</div>
-    </section>
-<!--Scripts-->
+            </div>
+        </div>-
+
     
+    <!--Our Story Page-->
+    <section>
+        <header>
+            <a href=""><h1>Our Story</h1></a>
+        </header>
+        <div class="container-fluid bg--story">
+            <div class="container">
+                <div class="row">
+                    <div class="col">col</div>
+                    <div class="col">col</div>
+                    <div class="col">col</div>
+                    <div class="col">col</div>
+                </div>
+                <div class="row">
+                    <div class="col-8">col-8</div>
+                    <div class="col-4">col-4</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Explore Page-->
+    <section>
+        <header>
+            <h1>Explore!</h1>
+        </header>
+        <div class="container-fluid bg-explore">
+            <div class="container">
+                <div class="row">
+                    <div class="col">col</div>
+                    <div class="col">col</div>
+                    <div class="col">col</div>
+                    <div class="col">col</div>
+                </div>
+            </div>
+            </div>
+        </div>
+    <!--Footer-->
+    
+    <!--Scripts-->
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+</script>
+<script src="slider.js"></script>
+<script src="script.js"></script>
 </body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
 </html>
