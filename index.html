@@ -13,8 +13,8 @@
 <body>
     <!--The Header-->
     <nav class="navbar navbar-expand-lg navbar-light bg-navbar">
-        <a class="navbar-brand text-navbar" href="#">
-            <h1>Vadstena Guide</h1><!--<div id="tm-sm">™</div>-->
+        <a class="navbar-brand text-navbar" href="#"><span><h1>Vadstena Guide</h1></span> 
+            <!--<div id="tm-sm">™</div>-->
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -60,76 +60,84 @@
         </div>
     </nav>
     <!--Home Page-->
-    <div class="container-fluid bg-home-container">
+    <div class="container-fluid bg-home-container" style="
+    padding-left: 0px;
+    padding-right: 0px;
+">
         <div class="row">
-                    <div class="col">col</div>
-                    <div class="col">col</div>
-                    <div class="col">col</div>
-                </div>
-                <div class="row">
-                    <div class="col col-home-size">col</div>
-                </div>
-    </div>
-    <!--Weekly event Slider Create card divs- credit to Basir Payenda-->
-        <!-- I have added a section as I do not want this influencing the rest of my mark-up-->
-        <section id="section-align" class="bg-grn">
-            <header class="ml-auto"><h3 >Always something to do each day of the week...</h3></header>
-            <div class="slider-section">
-                <div class="container-slider">
-                    <div class="cards">
-                        <div class="card shadow">
-                            <div class="img-card-poppy slide -overlay"></div>
-                            <div class="card-content">
-                                <h1>Monday</h1>
-                                <p>Poppy Picking Day</p>
+            <div class="col">col</div>
+            <div class="col">col</div>
+            <div class="col">col</div>
+        </div>
+        <div class="row">
+            <!--Hero Text-->
+            <div class="col col-home-size home-text">
+                <h1>Explore the quaint town by the lake</h1>
+            </div>
+        </div>
+        <!--Weekly event Slider Create card divs- credit to Basir Payenda-->
+    <!-- I have added a section as I do not want this influencing the rest of my mark-up-->
+        <div id="slider-section" class="bg-grn" style="
+    padding-top: 25px; margin-top: 115px;
+">
+             <h3>Always something to do each day of the week...</h3>
+                <div class="slider">
+                    <div class="container-slider">
+                        <div class="cards">
+                            <div class="card shadow">
+                                <div class="img-card-poppy slide -overlay"></div>
+                                <div class="card-content">
+                                    <h1>Monday</h1>
+                                    <p>Poppy Picking Day</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card shadow">
-                            <div class="img-card-tree slide -overlay"></div>
-                            <div class="card-content">
-                                <h1>Tuesday</h1>
-                                <p>Hug a Tree in a Forest Day</p>
+                            <div class="card shadow">
+                                <div class="img-card-tree slide -overlay"></div>
+                                <div class="card-content">
+                                    <h1>Tuesday</h1>
+                                    <p>Hug a Tree in a Forest Day</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card shadow">
-                            <div class="img-card-car"></div>
-                            <div class="card-content">
-                                <h1>Wednesday</h1>
-                                <p>Nostalgic Car Evening</p>
+                            <div class="card shadow">
+                                <div class="img-card-car"></div>
+                                <div class="card-content">
+                                    <h1>Wednesday</h1>
+                                    <p>Nostalgic Car Evening</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card shadow">
-                            <div class="img-card-train"></div>
-                            <div class="card-content">
-                                <h1>Thursday</h1>
-                                <p>Train Day!</p>
+                            <div class="card shadow">
+                                <div class="img-card-train"></div>
+                                <div class="card-content">
+                                    <h1>Thursday</h1>
+                                    <p>Train Day!</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card shadow">
-                            <div class="img-card-heart"></div>
-                            <div class="card-content">
-                                <h1>Friday</h1>
-                                <p>Romantic Fridays</p>
+                            <div class="card shadow">
+                                <div class="img-card-heart"></div>
+                                <div class="card-content">
+                                    <h1>Friday</h1>
+                                    <p>Romantic Fridays</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card shadow">
-                            <div class="img-card-castle"></div>
-                            <div class="card-content">
-                                <h1>Saturday</h1>
-                                <p>Castle Open Day!</p>
+                            <div class="card shadow">
+                                <div class="img-card-castle"></div>
+                                <div class="card-content">
+                                    <h1>Saturday</h1>
+                                    <p>Castle Open Day!</p>
+                                </div>
                             </div>
-                        </div>
-                        <div class="card shadow">
-                            <div class="img-card-church"></div>
-                            <div class="card-content">
-                                <h1>Sunday</h1>
-                                <p>St. Birgitta Sundays</p>
+                            <div class="card shadow">
+                                <div class="img-card-church"></div>
+                                <div class="card-content">
+                                    <h1>Sunday</h1>
+                                    <p>St. Birgitta Sundays</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+        </div>
+    </div>
     <!--Our Story Page-->
     <section>
         <header>
@@ -151,37 +159,37 @@
                 </div>
             </div>
         </div>
-        
-         </section>
-        <!--Explore Page-->
-        <section>
-            <header>
-                <h1>Explore!</h1>
-            </header>
-            <div class="container-fluid bg-explore">
-                <div class="container">
-                    <div class="row">
-                        <div class="col">col</div>
-                        <div class="col">col</div>
-                        <div class="col">col</div>
-                        <div class="col">col</div>
-                    </div>
+
+    </section>
+    <!--Explore Page-->
+    <section>
+        <header>
+            <h1>Explore!</h1>
+        </header>
+        <div class="container-fluid bg-explore">
+            <div class="container">
+                <div class="row">
+                    <div class="col">col</div>
+                    <div class="col">col</div>
+                    <div class="col">col</div>
+                    <div class="col">col</div>
                 </div>
             </div>
-                 </section>
-       
-        <!--Footer-->
+        </div>
+    </section>
 
-        <!--Scripts-->
+    <!--Footer-->
 
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
-        </script>
-        <script src="slider.js"></script>
-        <script src="script.js"></script>
+    <!--Scripts-->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+    <script src="slider.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>

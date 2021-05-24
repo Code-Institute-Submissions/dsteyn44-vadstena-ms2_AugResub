@@ -29,7 +29,7 @@ body {
     overflow: hidden;
 }
 
-@media (min-width: 575.98px) { 
+/*--@media (min-width: 575.98px) { 
 
 .bg-home-container {
     background: url('../images/hero.png') no-repeat center center;
@@ -40,6 +40,7 @@ body {
     overflow: hidden;
 }
 }
+*/
 
 .bg-grn {
   background-color: rgba(6, 153, 1, 0.8);
@@ -59,7 +60,7 @@ body {
 }
 
 /*-------Navbar-------*/
-nav a h1 {
+nav a span h1 {
     color: ivory;
 }
 
@@ -102,13 +103,27 @@ nav a h1 {
 .col-home-size {
     height: 700px;
 }
+/*-----Hero text-------*/
+.home-text h1 {
+text-align: center;
+text-justify: auto;
+margin-top: 350px;
+font-size: 80px;
+}
+
 /*-----Slider-------*/
-.section-align {
-    vertical-align: bottom;
+#slider-section {
+     width: 100%;
+     margin: none;
     /*--background-color: rgba(6, 153, 1, 0.8);*/
 }
 
-.slider-section {
+.slider-row {
+    height: 600px;
+    margin: none;
+}
+
+.slider {
   min-height: 400px;/*--Reduced size of height from 600px--*/
   display: flex;
   justify-content: center;
@@ -117,8 +132,6 @@ nav a h1 {
 }
 
 h3 {
-  justify-content: center;
-  align-items: center;
   text-align: center;
 }
 
