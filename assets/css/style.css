@@ -41,6 +41,10 @@ body {
 }
 }
 
+.bg-grn {
+  background-color: rgba(6, 153, 1, 0.8);
+}
+
 .bg--story {
     background-color: chocolate;
     height: 100vh;
@@ -101,6 +105,7 @@ nav a h1 {
 /*-----Slider-------*/
 .section-align {
     vertical-align: bottom;
+    /*--background-color: rgba(6, 153, 1, 0.8);*/
 }
 
 .slider-section {
@@ -108,7 +113,7 @@ nav a h1 {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgba(201, 95, 8, .8);
+ /*--background-color: rgba(6, 153, 1, 0.8);*/
 }
 
 h3 {
