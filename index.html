@@ -68,6 +68,7 @@
             <div class="col">col</div>
             <div class="col">
                 <!--Weather Date and Time Container-->
+                <!--credit to Jonah lawrance on Youtube for the code-->
     <div class="container-fluid weather-container">
             <div class="weather-card d-flex  align-items-center">
                 <div class="weather justify-content-center">
@@ -173,24 +174,29 @@
     </section>
     <!--Explore Page-->
     <section>
-        <header>
+        <div class="container-fluid bg-grn">
+            <header>
             <h1>Explore!</h1>
         </header>
-        <div class="container-fluid bg-explore">
-            <div class="container">
-                <div class="row">
-                    <div class="col">col</div>
-                    <div class="col">col</div>
-                    <div class="col">col</div>
-                    <div class="col">col</div>
-                </div>
-            </div>
-        </div>
+             <div class="row">
+    <div class="col-12">
+        <div id="map"></div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col">col</div>
+    <div class="col">col</div>
+    <div class="col">col</div>
+    <div class="col">col</div>
+  </div>
+</div>
     </section>
 
     <!--Footer-->
 
     <!--Scripts-->
+    <script src="https://unpkg.com/@googlemaps/markerclustererplus/dist/index.min.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmAxe4hButpCJylbzEyU-7eRTb3dhtVvk&callback=initMap"></script>
     <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">

@@ -244,4 +244,8 @@ box-shadow: 4px rgba(0, 0, 0, 1);
 
 /*-------Our Story Page-------*/
 /*-------Explore Page-------*/
+#map {
+ width: 100%;  
+ height: 500px; 
+}
 /*-------Footer Page-------*/
