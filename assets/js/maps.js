@@ -56,7 +56,7 @@ addSiteInfo();
 }
 
 //Add the event listener for the botton
-document.getElementById("btn-parking").addEventListener("click",siteMap);
+document.getElementById("btn-site").addEventListener("click",siteMap);
 //function parkingSites() {
     //var parkingMap = new google.maps.Map(document.getElementById("map"), {
         //center: cenCoords,
@@ -140,12 +140,121 @@ var markerSite = [
 function addSiteInfo() {
   for( var i = 0; i < markerSite.length; i++) {
     //adding more information for info window in the form of content string
-    var contentString = '<h3 style="color: black;">' + markerSite[i].placeName + '</h3>' + '<p style="color: black; text-align: justify;">' + markerSite[i].information + '</p>' + markerSite[i].image ;
+    var contentString = '<h3 style="color: black;">' + markerSite[i].placeName + '</h3>' + '<p style="color: black; text-align: justify;">' + markerSite[i].information + '</p>' + markerSite[i].image;
 
-  const marker = new google.maps.Marker({
+  const point = new google.maps.Marker({
       position: markerSite[i].LatLng[0],
       icon: icons [markerSite[i].type].icon,
       title: markerSite[i].placeName,
+      map: map, 
+      animation: google.maps.Animation.DROP,
+    });
+//Adding the info window from google
+ const infowindow = new google.maps.InfoWindow({
+    content: contentString,
+    maxWidth: 300 //in pixels the width of the infowindow
+  });
+//Adding the event listener - from Googole
+  point.addListener("click", () => {
+    closeOtherInfo();
+    infowindow.open(point.get('map'), point);
+    InfoObj[0] = infowindow;//this is used to clear previous information when clicking on another marker.We previously created a info Object at the top.
+  });
+}
+//create a function to make the marker value as null whenever it loads 
+function closeOtherInfo() {
+  if(InfoObj.length > 0) {
+  InfoObj[0].set("point", null);//then close the marker 
+  InfoObj[0].close();
+  InfoObj[0].length = 0;
+  }
+}
+}
+
+//-----------"RESTAURANT" SITES------------//
+function restMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: cenCoords,
+    zoom: 15,
+  });
+addRestInfo();
+}
+
+//Add the event listener for the botton
+document.getElementById("btn-eat").addEventListener("click",restMap);
+
+var icons = {
+  restaurants: {
+    icon: 'assets/images/food.png',
+  },
+};
+//Add the information for the sites. we have defined as markerSite.
+var markerRest = [
+  {
+    placeName: 'Bakgatan $$$ ****',
+    information: 'TQuaint restaurant in the back street. Serves local  fusion food and great beers',
+    image: '<img src="assets/images/bakgatan.png" style="width: 25px, height: 25px;">',
+    LatLng: [{
+      lat: 58.448710,
+      lng: 14.889413
+    }],
+    type:'restaurants'
+},
+
+{
+    placeName: 'Borgmästern $$ **',
+    information: 'Centrally located gastropub and sports bar. Typical pub fare and great beers.',
+    image: '<img src="assets/images/borgmaster.png" style="width: 25px, height: 25px;">',
+    LatLng: [{
+      lat: 58.44601892145026,
+      lng: 14.883571690993277
+    }],
+    type:'restaurants'
+},
+
+{
+    placeName: 'Rådhuskällaren $$ **',
+    information: 'Located at the old town hall, it serves typical pub fare and local dishes. Great Beer!',
+    image: '<img src="assets/images/kallen.png" style="width: 25px, height: 25px;">',
+    LatLng: [{
+      lat: 58.447146583493584,
+      lng: 14.887741724686729
+    }],
+    type:'restaurants'
+},
+
+{
+    placeName: 'Hörnet $$$ *****',
+    information: 'Translated to \"Corner\", this one not to be missed... if you can afford it. Fusion Gastromony in a homey atmosphere. Best coctail bar in town',
+    image: '<img src="assets/images/hornet.png" style="width: 25px, height: 25px;">',
+    LatLng: [{
+      lat: 58.44883,
+      lng: 14.89435
+    }],
+    type:'restaurants'
+},
+
+{
+    placeName: 'Munkens Restaurang',
+    information: 'This is the restaurant to the Hotel. great service and a fantastic wine list is paired with fantastic soul food. Reasonably priced. Great bar upstairs and great lounge during summer',
+    image: '<img src="assets/images/munkens.png" style="max-width: 100%, height: 25px;">',
+    LatLng: [{
+      lat: 58.45031599493132,
+      lng: 14.890632079588977
+    }],
+    type:'restaurants'
+},
+];
+//creates a loop that array that will run for elements markersOn Map
+function addRestInfo() {
+  for( var i = 0; i < markerRest.length; i++) {
+    //adding more information for info window in the form of content string
+    var contentString = '<h3 style="color: black;">' + markerRest[i].placeName + '</h3>' + '<p style="color: black; text-align: justify;">' + markerRest[i].information + '</p>' + markerRest[i].image ;
+
+  const marker = new google.maps.Marker({
+      position: markerRest[i].LatLng[0],
+      icon: icons [markerRest[i].type].icon,
+      title: markerRest[i].placeName,
       map: map, 
       animation: google.maps.Animation.DROP,
     });
@@ -170,5 +279,3 @@ function closeOtherInfo() {
   }
 }
 }
-
-//-----------"MUST-SEE" SITES------------//
