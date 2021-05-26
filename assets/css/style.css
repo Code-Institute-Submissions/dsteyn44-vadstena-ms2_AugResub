@@ -201,7 +201,7 @@ h1 {
 /*-------Container and Cards------*/
 /*-------Adding a border top and bottom to help understand card container and container----*/ 
 .container-slider {
-  position: relative;
+  position: absolute;
   width: 1000px;
   height: 400px;
   overflow: hidden;
@@ -247,5 +247,8 @@ box-shadow: 4px rgba(0, 0, 0, 1);
 #map {
  width: 100%;  
  height: 500px; 
+ border: 2px solid ivory;
+ border-radius: 10px;
 }
+
 /*-------Footer Page-------*/
