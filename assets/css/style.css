@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Indie+Flower&family=Nosifer&family=Roboto&display=swap');
 /*-------Body-------*/
 
+html,body{
+    overflow-x: hidden;
+}
+
 *,
 *::before,
 *::after {
@@ -11,8 +15,8 @@
 
 body {
  font-family: 'Berkshire Swash', cursive;
- color: ivory;
- background-color: rgb(201, 95, 8);
+ color: ivory;;
+ background-color: #FF9F55;
 }
 
 /*-------Background and color-------*/
@@ -22,11 +26,16 @@ body {
 }
 
 .bg-home-container {
-    background: url('../images/hero.png') no-repeat center center;
+    background: url('../images/hero.png') no-repeat center center fixed;
     background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
     height: 100vh;
     min-width: 100%;
-    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
 }
 
 /*--@media (min-width: 575.98px) { 
@@ -46,12 +55,15 @@ body {
   background-color: rgba(6, 153, 1, 0.8);
 }
 
+#bg-oge {
+  background-color: #FF9F55;;
+}
+
 .bg--story {
     background-color: chocolate;
     height: 100vh;
     min-width: 100%;
 }
-
 
 .bg-explore {
     background-color: olivedrab;
@@ -94,6 +106,7 @@ nav a span h1 {
 .container-size {
     max-width: 100%;
     height: 100px;
+    
 }
 .col {
     width: 200px;
@@ -103,146 +116,68 @@ nav a span h1 {
 .col-home-size {
     height: 700px;
 }
+
 /*-----Hero text-------*/
-.home-text h1 {
+.home-text {
 text-align: center;
 text-justify: auto;
 margin-top: 350px;
-font-size: 80px;
+font-size: 100px;
 }
 
 /*-----Slider-------*/
-#slider-section {
-     width: 100%;
-     margin: none;
-     position: relative;
-    /*--background-color: rgba(6, 153, 1, 0.8);*/
+
+/*-------Our Story Page------- Time line taken from Rosie Project*/
+
+#story-hd-text {
+    font-size: 50px;
+    text-align: center;
 }
 
-.slider-row {
-    height: 600px;
-    margin: none;
+.history-heading {
+    color: #fafafa;
+    margin-bottom: 50px;
+}
+.timeline-item {
+    padding: 4em 2em 0em 2em;
+    position: relative;
+    color: #fafafa;
+    border-left: 1px solid;
 }
 
-.slider {
-  min-height: 400px;/*--Reduced size of height from 600px--*/
-  display: flex;
-  justify-content: center;
-  align-items: center;
- /*--background-color: rgba(6, 153, 1, 0.8);*/
+.timeline-item p {
+    padding: 0;
+    margin: 0;
 }
 
-h3 {
-  text-align: center;
+.timeline-item:before {
+    content: attr(data-dates);
+    position: absolute;
+    left: 2.5em;
+    top: 3em;
+    display: block;
+    font-family: 'Exo', sans-serif;
+    font-weight: 500;
+    font-size: 0.8em;
+    padding: 0;
+    margin: 0;
 }
 
-/*-------Content Styling------*/
-/*--.img-card-poppy {
-  background-color: rgba(0, 0, 0, 0.6);
-  background-size: cover;
-  width: 100%;
-  height: 200px;
-}--*/
-
-
-.img-card-poppy {
-  background: url('../images/poppy-castle.png') no-repeat center center;
-  background-size: cover;
-  width: 100%;
-  height: 200px;
+.timeline-item:after {
+    width: 12px;
+    height: 12px;
+    display: block;
+    top: 2.4em;
+    position: absolute;
+    left: -6px;
+    border-radius: 12px;
+    content: '';
+    background: #fafafa;
+}
+.history-items {
+    margin-bottom: 30px;
 }
 
-.img-card-car {
-  background: url('../images/classic-cars.png') no-repeat center center;
-  background-size: cover;
-  width: 100%;
-  height: 200px;
-}
-
-.img-card-tree {
-  background: url('../images/trees.png') no-repeat center center;
-  background-size: cover;
-  width: 100%;
-  height: 200px;
-}
-
-.img-card-train {
-  background: url('../images/train.png') no-repeat center center;
-  background-size: cover;
-  width: 100%;
-  height: 200px;
-}
-
-.img-card-heart {
-  background: url('../images/heart\ .png') no-repeat center center;
-  background-size: cover;
-  width: 100%;
-  height: 200px;
-}
-
-.img-card-castle {
-  background: url('../images/castle-door.png') no-repeat center center;
-  background-size: cover;
-  width: 100%;
-  height: 200px;
-}
-
-.img-card-church {
-  background: url('../images/church.png') no-repeat center center;
-  background-size: cover;
-  width: 100%;
-  height: 200px;
-}
-
-h1 {
-  margin: 0.5rem 0;
-}
-
-/*-------Container and Cards------*/
-/*-------Adding a border top and bottom to help understand card container and container----*/ 
-.container-slider {
-  position: absolute;
-  width: 1000px;
-  height: 400px;
-  overflow: hidden;
-  overflow-x: scroll;
-  cursor: grab;
-  align-items: center;
-  /*border-top: 10px solid red;- use as guides*/
-}
-
-/*-------Cards are using CSS Grid system------*/
-/* --change the position to Absolute as we will change the Lft position in JS--*/
-.cards {
-  position: absolute;
-  top: 25px;
-  left: 0;
-  display: grid;
-  grid-template-columns: repeat(7, 300px);
-  grid-gap: 50px;
-  pointer-events: none;
-  /*border-bottom: 10px solid blue; - use as guides*/
-}
-
-.card {
-  background-color: olivedrab;
-  border: 3px solid chocolate;
-  border-radius: 1rem;
-  overflow: hidden;
-  box-shadow: 4px rgba(0, 0, 0, 1);
-}
-
-.card-content {
-  color: ivory;
-  padding: 1rem;
-}
-
-.shadow {
-box-shadow: 4px rgba(0, 0, 0, 1);
-}
-
-
-/*-------Our Story Page-------*/
 /*-------Explore Page-------*/
 #map {
  width: 100%;  
