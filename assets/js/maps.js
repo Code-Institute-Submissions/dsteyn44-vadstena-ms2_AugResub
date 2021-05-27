@@ -76,7 +76,7 @@ document.getElementById("btn-site").addEventListener("click",siteMap);
 
 var points = {
   site: {
-    icon: 'assets/images/site-icon.png'
+    icon: 'assets/images/site.png'
   },
 };
 //Add the information for the sites. we have defined as markerSite.
@@ -303,7 +303,7 @@ var markerStay = [
   {
     placeName: ' Vadstena Kloster Hotel $$$ ****',
     information: 'The hotel and Restaurant Munkklostret are housed in some of Sweden\s oldest buildings; St. Birgitta\'s Monastery from the 14th century and Birger Jarl\'s princely palace from the 13th century and the King\'s Hall from 1253. Quaint with a touch of elegance.',
-    image: '<img src="assets/images/bakgatan.png" style="width: 25px, height: 25px;">',
+    image: '<img src="assets/images/kloster.png" style="width: 25px, height: 25px;">',
     LatLng: [{
       lat: 58.45031599493132,
       lng: 14.890632079588977
@@ -314,7 +314,7 @@ var markerStay = [
 {
     placeName: 'Stårby $$ ***',
     information: 'Quaint hotel located a little outside of town. Food is well served and reooms are spacious.',
-    image: '<img src="assets/images/borgmaster.png" style="width: 25px, height: 25px;">',
+    image: '<img src="assets/images/starby.png" style="width: 25px, height: 25px;">',
     LatLng: [{
       lat: 58.44153683720099,
       lng: 14.879127679714298
@@ -325,7 +325,7 @@ var markerStay = [
 {
     placeName: ' Sjögården $ **',
     information: 'Centrally located. This quaint B & B  offers well comfortable rooms and friendly service',
-    image: '<img src="assets/images/kallen.png" style="width: 25px, height: 25px;">',
+    image: '<img src="assets/images/sjor.png" style="width: 25px, height: 25px;">',
     LatLng: [{
       lat: 58.447508791970435,
       lng: 14.88678809334407
@@ -336,7 +336,7 @@ var markerStay = [
 {
     placeName: 'Hotel Slottsgården $ **',
     information: 'Located just outside Vadstena Castle. Rooms are comfortable and include a nautical theme. Service is friendly',
-    image: '<img src="assets/images/hornet.png" style="width: 25px, height: 25px;">',
+    image: '<img src="assets/images/slottsgarden.png" style="width: 25px, height: 25px;">',
     LatLng: [{
       lat: 58.44474794971851,
       lng: 14.88181783206976
@@ -403,7 +403,7 @@ var markerShop = [
   {
     placeName: 'Manfreds $$$ ****',
     information: 'Iconic highend elegant men\'s wear shop featuring brands such as Gant, Oscar of Sweden and Ralph Lauren. Great selection of suits',
-    image: '<img src="assets/images/bakgatan.png" style="width: 25px, height: 25px;">',
+    image: '<img src="assets/images/manfreds.png" style="width: 25px, height: 25px;">',
     LatLng: [{
       lat: 58.4482176772895,
       lng: 14.889506023892594
@@ -414,7 +414,7 @@ var markerShop = [
 {
     placeName: 'Mrs. Manfreds $$$ ****',
     information: 'Iconic highend Lady\'s brands, featuring Lexington, Scotch & Soda and Gant.',
-    image: '<img src="assets/images/borgmaster.png" style="width: 25px, height: 25px;">',
+    image: '<img src="assets/images/mrs-manfreds.png" style="width: 25px, height: 25px;">',
     LatLng: [{
       lat: 58.44819,
       lng: 14.88959
@@ -426,7 +426,7 @@ var markerShop = [
 {
     placeName: 'Kopp & Kanna $ ****',
     information: 'Great Home Decor store that will suit all your home needs.',
-    image: '<img src="assets/images/kallen.png" style="width: 25px, height: 25px;">',
+    image: '<img src="assets/images/koppa.png" style="width: 25px, height: 25px;">',
     LatLng: [{
       lat: 58.447866565927654,
       lng: 14.889000564334662
@@ -437,7 +437,7 @@ var markerShop = [
 {
     placeName: 'Vadstena Blommor $ ***',
     information: 'Quaint flower shop that has a few bits and bobs inside too',
-    image: '<img src="assets/images/hornet.png" style="width: 25px, height: 25px;">',
+    image: '<img src="assets/images/blommor.png" style="width: 25px, height: 25px;">',
     LatLng: [{
       lat: 58.44752554248506,
       lng: 14.888766328472473
@@ -448,7 +448,7 @@ var markerShop = [
 {
     placeName: 'Stilepok $ **',
     information: 'Quaint home decor/home hardware store.',
-    image: '<img src="assets/images/hornet.png" style="width: 25px, height: 25px;">',
+    image: '<img src="assets/images/stil.png" style="width: 25px, height: 25px;">',
     LatLng: [{
       lat: 58.44822057673208,
       lng: 14.889817619555906

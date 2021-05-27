@@ -4,12 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vadstena Guide</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <title>Vadstena Guide</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init('user_RlwLiQrtBYFAbn2bBtPrh');
+   })();
+</script>
 </head>
-
 <body>
     <!--The Header-->
     <nav class="navbar navbar-expand-lg navbar-light bg-navbar">
@@ -94,9 +101,7 @@
         </div>
         <!--Weekly event Slider Create card divs- credit to Basir Payenda-->
         <!-- I have added a section as I do not want this influencing the rest of my mark-up-->
-        <div id="slider-section" class="bg-grn" style="
-    padding-top: 25px; margin-top: 115px;
-">
+        <div id="slider-section" class="bg-grn" style="padding-top: 25px; margin-top: 115px;">
             <h3>Always something to do each day of the week...</h3>
             <div class="slider">
                 <div class="container-slider">
@@ -211,7 +216,22 @@
             </div>
         </div>
     </section>
-
+<section class="container-fluid">
+        <div class="row bg-color-contact">
+            <div>
+                <h3 class="contact-heading uppercase text-center">Contact Us</h3>
+                <h5 class="uppercase text-center">Let's work together</h5>
+            </div>
+            <div class="center-form">
+                <form onsubmit="return sendMail(this);">
+                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required/>
+                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email" required/>
+                    <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary" placeholder="Project Description" required></textarea>
+                    <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
     <!--Footer-->
 
     <!--Scripts-->
@@ -225,9 +245,9 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
     </script>
+    <script src="./assets/js/sendemail.js"></script>
     <script src="./assets/js/maps.js"></script>
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/script.js"></script>
 </body>
-
 </html>
