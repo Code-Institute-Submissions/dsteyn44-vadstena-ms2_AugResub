@@ -31,7 +31,7 @@ body {
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    height: 100vh;
+    height: 75vh;
     min-width: 100%;
     align-items: center;
     justify-content: center;
@@ -57,6 +57,7 @@ body {
 
 #bg-oge {
   background-color: #FF9F55;;
+  padding-top: 50px;
 }
 
 .bg--story {
@@ -114,30 +115,39 @@ nav a span h1 {
 }
 
 .col-home-size {
-    height: 700px;
+    height: 600px;
 }
 
 /*-----Hero text-------*/
 .home-text {
 text-align: center;
 text-justify: auto;
-margin-top: 350px;
+margin-top: 100px;
 font-size: 100px;
 }
 
 /*-----Slider-------*/
 
 /*-------Our Story Page------- Time line taken from Rosie Project*/
+  
+.history-heading,
+.section-heading {
+    font-family: 'Exo', sans-serif;
+    font-weight: 300;
+    margin-top: 25px;
+    margin-bottom: 40px;
+}
 
 #story-hd-text {
     font-size: 50px;
     text-align: center;
 }
 
-.history-heading {
-    color: #fafafa;
+.timeline-heading {
+    font-family: 'Roboto', sans-serif;
     margin-bottom: 50px;
 }
+
 .timeline-item {
     padding: 4em 2em 0em 2em;
     position: relative;
@@ -178,6 +188,9 @@ font-size: 100px;
     margin-bottom: 30px;
 }
 
+.section-column {
+   padding-left: 100px;
+}
 /*-------Explore Page-------*/
 #map {
  width: 100%;  
