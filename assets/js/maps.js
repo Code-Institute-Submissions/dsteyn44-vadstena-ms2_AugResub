@@ -22,7 +22,7 @@ initMap();
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {
     center: cenCoords,
-    zoom: 5,
+    zoom: 6,
   });
 //addTownInfo();
 const townMark = {"lat": 58.448, "lng": 14.889, "name": "Vadstena", "icon":'assets/images/vadstena-pointer.svg',};//figured out how to a my icon -took me forever!
@@ -74,7 +74,7 @@ document.getElementById("btn-site").addEventListener("click",siteMap);
 //},
 //};
 
-var icons = {
+var points = {
   site: {
     icon: 'assets/images/site-icon.png'
   },
@@ -142,9 +142,9 @@ function addSiteInfo() {
     //adding more information for info window in the form of content string
     var contentString = '<h3 style="color: black;">' + markerSite[i].placeName + '</h3>' + '<p style="color: black; text-align: justify;">' + markerSite[i].information + '</p>' + markerSite[i].image;
 
-  const point = new google.maps.Marker({
+  const markerB = new google.maps.Marker({
       position: markerSite[i].LatLng[0],
-      icon: icons [markerSite[i].type].icon,
+      icon: points [markerSite[i].type].icon,
       title: markerSite[i].placeName,
       map: map, 
       animation: google.maps.Animation.DROP,
@@ -155,16 +155,16 @@ function addSiteInfo() {
     maxWidth: 300 //in pixels the width of the infowindow
   });
 //Adding the event listener - from Googole
-  point.addListener("click", () => {
+  markerB.addListener("click", () => {
     closeOtherInfo();
-    infowindow.open(point.get('map'), point);
+    infowindow.open(markerB.get('map'), markerB);
     InfoObj[0] = infowindow;//this is used to clear previous information when clicking on another marker.We previously created a info Object at the top.
   });
 }
 //create a function to make the marker value as null whenever it loads 
 function closeOtherInfo() {
   if(InfoObj.length > 0) {
-  InfoObj[0].set("point", null);//then close the marker 
+  InfoObj[0].set("markerB", null);//then close the marker 
   InfoObj[0].close();
   InfoObj[0].length = 0;
   }
@@ -181,7 +181,7 @@ addRestInfo();
 }
 
 //Add the event listener for the botton
-document.getElementById("btn-eat").addEventListener("click",restMap);
+document.getElementById("btn-eat").addEventListener("click", restMap);
 
 var icons = {
   restaurants: {
@@ -192,7 +192,7 @@ var icons = {
 var markerRest = [
   {
     placeName: 'Bakgatan $$$ ****',
-    information: 'TQuaint restaurant in the back street. Serves local  fusion food and great beers',
+    information: 'Quaint restaurant in the back street. Serves local  fusion food and great beers',
     image: '<img src="assets/images/bakgatan.png" style="width: 25px, height: 25px;">',
     LatLng: [{
       lat: 58.448710,
@@ -235,7 +235,7 @@ var markerRest = [
 },
 
 {
-    placeName: 'Munkens Restaurang',
+    placeName: 'Munkens Restaurang $$$ ****',
     information: 'This is the restaurant to the Hotel. great service and a fantastic wine list is paired with fantastic soul food. Reasonably priced. Great bar upstairs and great lounge during summer',
     image: '<img src="assets/images/munkens.png" style="max-width: 100%, height: 25px;">',
     LatLng: [{
@@ -278,4 +278,217 @@ function closeOtherInfo() {
   InfoObj[0].length = 0;
   }
 }
+
+}
+
+//-----------"STAY" SITES------------//
+function stayMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: cenCoords,
+    zoom: 14,
+  });
+addStayInfo();
+}
+
+//Add the event listener for the botton
+document.getElementById("btn-stay").addEventListener("click",stayMap);
+
+var labels = {
+  hotels: {
+    label: 'assets/images/stay.png',
+  },
+};
+//Add the information for the sites. we have defined as markerSite.
+var markerStay = [
+  {
+    placeName: ' Vadstena Kloster Hotel $$$ ****',
+    information: 'The hotel and Restaurant Munkklostret are housed in some of Sweden\s oldest buildings; St. Birgitta\'s Monastery from the 14th century and Birger Jarl\'s princely palace from the 13th century and the King\'s Hall from 1253. Quaint with a touch of elegance.',
+    image: '<img src="assets/images/bakgatan.png" style="width: 25px, height: 25px;">',
+    LatLng: [{
+      lat: 58.45031599493132,
+      lng: 14.890632079588977
+    }],
+    type:'hotels'
+},
+
+{
+    placeName: 'Stårby $$ ***',
+    information: 'Quaint hotel located a little outside of town. Food is well served and reooms are spacious.',
+    image: '<img src="assets/images/borgmaster.png" style="width: 25px, height: 25px;">',
+    LatLng: [{
+      lat: 58.44153683720099,
+      lng: 14.879127679714298
+    }],
+    type:'hotels'
+},
+
+{
+    placeName: ' Sjögården $ **',
+    information: 'Centrally located. This quaint B & B  offers well comfortable rooms and friendly service',
+    image: '<img src="assets/images/kallen.png" style="width: 25px, height: 25px;">',
+    LatLng: [{
+      lat: 58.447508791970435,
+      lng: 14.88678809334407
+    }],
+    type:'hotels'
+},
+
+{
+    placeName: 'Hotel Slottsgården $ **',
+    information: 'Located just outside Vadstena Castle. Rooms are comfortable and include a nautical theme. Service is friendly',
+    image: '<img src="assets/images/hornet.png" style="width: 25px, height: 25px;">',
+    LatLng: [{
+      lat: 58.44474794971851,
+      lng: 14.88181783206976
+    }],
+    type:'hotels'
+},
+
+];
+//creates a loop that array that will run for elements markersOn Map
+function addStayInfo() {
+  for( var i = 0; i < markerStay.length; i++) {
+    //adding more information for info window in the form of content string
+    var contentString = '<h3 style="color: black;">' + markerStay[i].placeName + '</h3>' + '<p style="color: black; text-align: justify;">' + markerStay[i].information + '</p>' + markerStay[i].image ;
+
+  const markerA = new google.maps.Marker({
+      position: markerStay[i].LatLng[0],
+      icon: labels [markerStay[i].type].label,
+      title: markerStay[i].placeName,
+      map: map, 
+      animation: google.maps.Animation.DROP,
+    });
+//Adding the info window from google
+ const infowindow = new google.maps.InfoWindow({
+    content: contentString,
+    maxWidth: 300 //in pixels the width of the infowindow
+  });
+//Adding the event listener - from Googole
+  markerA.addListener("click", () => {
+    closeOtherInfo();
+    infowindow.open(markerA.get('map'), markerA);
+    InfoObj[0] = infowindow;//this is used to clear previous information when clicking on another marker.We previously created a info Object at the top.
+  });
+}
+//create a function to make the marker value as null whenever it loads 
+function closeOtherInfo() {
+  if(InfoObj.length > 0) {
+  InfoObj[0].set("markerA", null);//then close the marker 
+  InfoObj[0].close();
+  InfoObj[0].length = 0;
+  }
+}
+
+}
+
+//-----------"SHOP" SITES------------//
+function shopMap() {
+  map = new google.maps.Map(document.getElementById("map"), {
+    center: cenCoords,
+    zoom: 17,
+  });
+addShopInfo();
+}
+
+//Add the event listener for the botton
+document.getElementById("btn-shop").addEventListener("click",shopMap);
+
+var tabs = {
+  shops: {
+    tab: 'assets/images/shop.png',
+  },
+};
+//Add the information for the sites. we have defined as markerSite.
+var markerShop = [
+  {
+    placeName: 'Manfreds $$$ ****',
+    information: 'Iconic highend elegant men\'s wear shop featuring brands such as Gant, Oscar of Sweden and Ralph Lauren. Great selection of suits',
+    image: '<img src="assets/images/bakgatan.png" style="width: 25px, height: 25px;">',
+    LatLng: [{
+      lat: 58.4482176772895,
+      lng: 14.889506023892594
+    }],
+    type:'shops'
+},
+
+{
+    placeName: 'Mrs. Manfreds $$$ ****',
+    information: 'Iconic highend Lady\'s brands, featuring Lexington, Scotch & Soda and Gant.',
+    image: '<img src="assets/images/borgmaster.png" style="width: 25px, height: 25px;">',
+    LatLng: [{
+      lat: 58.44819,
+      lng: 14.88959
+
+    }],
+    type:'shops'
+},
+
+{
+    placeName: 'Kopp & Kanna $ ****',
+    information: 'Great Home Decor store that will suit all your home needs.',
+    image: '<img src="assets/images/kallen.png" style="width: 25px, height: 25px;">',
+    LatLng: [{
+      lat: 58.447866565927654,
+      lng: 14.889000564334662
+    }],
+    type:'shops'
+},
+
+{
+    placeName: 'Vadstena Blommor $ ***',
+    information: 'Quaint flower shop that has a few bits and bobs inside too',
+    image: '<img src="assets/images/hornet.png" style="width: 25px, height: 25px;">',
+    LatLng: [{
+      lat: 58.44752554248506,
+      lng: 14.888766328472473
+    }],
+    type:'shops'
+},
+
+{
+    placeName: 'Stilepok $ **',
+    information: 'Quaint home decor/home hardware store.',
+    image: '<img src="assets/images/hornet.png" style="width: 25px, height: 25px;">',
+    LatLng: [{
+      lat: 58.44822057673208,
+      lng: 14.889817619555906
+    }],
+    type:'shops'
+},
+
+];
+//creates a loop that array that will run for elements markersOn Map
+function addShopInfo() {
+  for( var i = 0; i < markerShop.length; i++) {
+    //adding more information for info window in the form of content string
+    var contentString = '<h3 style="color: black;">' + markerShop[i].placeName + '</h3>' + '<p style="color: black; text-align: justify;">' + markerShop[i].information + '</p>' + markerShop[i].image ;
+
+  const markerB = new google.maps.Marker({
+      position: markerShop[i].LatLng[0],
+      icon: tabs [markerShop[i].type].tab,
+      title: markerShop[i].placeName,
+      map: map, 
+      animation: google.maps.Animation.DROP,
+    });
+//Adding the info window from google
+ const infowindow = new google.maps.InfoWindow({
+    content: contentString,
+    maxWidth: 300 //in pixels the width of the infowindow
+  });
+//Adding the event listener - from Googole
+  markerB.addListener("click", () => {
+    closeOtherInfo();
+    infowindow.open(markerB.get('map'), markerB);
+    InfoObj[0] = infowindow;//this is used to clear previous information when clicking on another marker.We previously created a info Object at the top.
+  });
+}
+//create a function to make the marker value as null whenever it loads 
+function closeOtherInfo() {
+  if(InfoObj.length > 0) {
+  InfoObj[0].set("markerB", null);//then close the marker 
+  InfoObj[0].close();
+  InfoObj[0].length = 0;
+  }
+}
+
 }
