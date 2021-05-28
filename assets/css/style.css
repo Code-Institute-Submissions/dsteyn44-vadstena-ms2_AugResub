@@ -19,6 +19,46 @@ body {
  background-color: #FF9F55;
 }
 
+/*----- I have tried a hover (which was successful but annoying and now an accordian which does not work
+/*accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #FF9F55;
+  max-height: 100vh;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+
+
 /*-------Background and color-------*/
 /*Changed the color of the navbar*/
 .bg-navbar {
@@ -26,7 +66,7 @@ body {
 }
 
 .bg-home-container {
-    background: url('../images/hero.png') no-repeat center center fixed;
+    background: url('../images/horse.png') no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -38,6 +78,25 @@ body {
     z-index: -1;
 }
 
+.home-text a{
+    font-size: 75px;
+    text-align: center;
+    color: ivory;
+}
+
+@media (max-width: 767.98px) { 
+.home-text a{
+    font-size: 50px;
+    text-align: center;
+    color: ivory;
+}
+}
+
+.head-text {
+    font-size: 50px;
+    text-align: center;
+    color: ivory;
+}
 /*--@media (min-width: 575.98px) { 
 
 .bg-home-container {
@@ -126,77 +185,210 @@ margin-top: 100px;
 font-size: 100px;
 }
 
+
+@media (max-width: 767.98px) { 
+.home-text {
+text-align: center;
+text-justify: auto;
+margin-top: 100px;
+font-size: 50px;
+}
+}
 /*-----Slider-------*/
 
-/*-------Our Story Page------- Time line taken from Rosie Project*/
-  
-.history-heading,
-.section-heading {
-    font-family: 'Exo', sans-serif;
-    font-weight: 300;
-    margin-top: 25px;
-    margin-bottom: 40px;
+/*-------Our Story Page------- accordian taken from W3school
+I also used CSS grid for the accordian */
+/*Style the buttons that are used to open and close the accordion panel */
+
+.responsive {
+  width: 100%;
+  height: auto;
 }
 
-#story-hd-text {
-    font-size: 50px;
-    text-align: center;
+.acc-main-container {
+  place-content: center;
+  padding-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 40% 20%;
+  grid-template-areas: 
+  "s u k"
+  "s m k"
+  "s d k";
 }
 
-.timeline-heading {
-    font-family: 'Roboto', sans-serif;
-    margin-bottom: 50px;
+.stone {
+  grid-area: s;
 }
 
-.timeline-item {
-    padding: 4em 2em 0em 2em;
-    position: relative;
-    color: #fafafa;
-    border-left: 1px solid;
+.king {
+  grid-area: k;
+}
+.up-text {
+  grid-area: u;
 }
 
-.timeline-item p {
-    padding: 0;
-    margin: 0;
+.mid-text {
+  grid-area: mu;
 }
 
-.timeline-item:before {
-    content: attr(data-dates);
-    position: absolute;
-    left: 2.5em;
-    top: 3em;
-    display: block;
-    font-family: 'Exo', sans-serif;
-    font-weight: 500;
-    font-size: 0.8em;
-    padding: 0;
-    margin: 0;
+.down-text {
+  grid-area: d;
 }
 
-.timeline-item:after {
-    width: 12px;
-    height: 12px;
-    display: block;
-    top: 2.4em;
-    position: absolute;
-    left: -6px;
-    border-radius: 12px;
-    content: '';
-    background: #fafafa;
-}
-.history-items {
-    margin-bottom: 30px;
+@media (max-width: 575.98px) { 
+
+.acc-main-container {
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: 
+  "u "
+  "mu "
+  "d ";
 }
 
-.section-column {
-   padding-left: 100px;
+.stone {
+  grid-area: none;
+  display: none;
 }
+
+.king {
+  grid-area: k;
+  display: none;
+}
+
+.up-text {
+  grid-area: u;
+
+}
+
+.mid-text {
+  grid-area: mu;
+  min-width: 100%;
+}
+
+.down-text {
+  grid-area: d;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #FF9F5e;
+  height: 100vh;
+}
+}
+
+
+@media (max-width: 767.98px) { 
+
+.stone {
+  grid-area: s;
+  max-width: 75%;
+}
+
+.king {
+  grid-area: k;
+  max-width: 75%;
+}
+
+.up-text {
+  grid-area: u;
+  max-width: 100%;
+  font-size: 75%;
+}
+
+.mid-text {
+  grid-area: mu;
+  max-width: 100%;
+  font-size: 75%;
+}
+
+.down-text {
+  grid-area: d;
+  max-width: 100%;
+  font-size: 75%;
+}
+
+}
+
+@media (max-width: 1085px) {  
+.up-text {
+  grid-area: u;
+  max-width: 100%;
+  font-size: 90%;
+}
+
+.mid-text {
+  grid-area: mu;
+  max-width: 100%;
+  font-size: 90%;
+}
+
+.down-text {
+  grid-area: d;
+  max-width: 100%;
+  font-size: 90%;
+}
+
+
+
+/*-------making the image appear and disappear with a hover pseudo element------*/
+
 /*-------Explore Page-------*/
 #map {
  width: 100%;  
  height: 500px; 
  border: 2px solid ivory;
  border-radius: 10px;
+ padding-left: 30px;
+ padding-right: 30px;
 }
 
+
+
+
+
+
+
 /*-------Footer Page-------*/
+.bg-footer-color {
+    background-color: black;
+}
+
+.foot-row-align {
+    justify-content: center;
+}
+
+#foot-container {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.media-links {
+    text-align: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+.media-links li a i {
+    color: rgba(224, 172, 26);
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+    min-height: 50px;
+    padding: 10px;
+}
+
+.head-foot-col-align {
+    text-align: center;
+    justify-content: center;
+}
+
+.media-links li a i:hover {
+    color: ivory;
+}

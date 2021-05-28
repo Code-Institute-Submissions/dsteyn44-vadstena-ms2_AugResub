@@ -7,14 +7,11 @@
     <title>Vadstena Guide</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
     </script>
-    <script type="text/javascript">
-        (function () {
-            emailjs.init('user_RlwLiQrtBYFAbn2bBtPrh');
-        })();
-    </script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
 </head>
 
 <body>
@@ -94,167 +91,125 @@
         </div>
         <div class="row">
             <!--Hero Text-->
-            <div class="col col-home-size home-text">Explore the quaint town by the lake</div>
+            <div class="col col-home-size home-text"><a href="index.html#explore">Explore</a><span></span> our quaint
+                town by the lake</span></div>
         </div>
     </div>
     <!--Weekly event Slider Create card divs- credit to Basir Payenda-->
     <!-- I have added a section as I do not want this influencing the rest of my mark-up-->
     <!--Our Story Page-->
     <section id="bg-oge">
-        <header>
-            <div id="story-hd-text">Our Story</div>
-            <p></p>
-        </header>
-        <section class="container-fluid">
+        <button class="accordion">Section 1</button>
+        <div class="panel">
+            <div class="acc-main-container">
+                <img src="./assets/images/stone.png" alt="#" style="padding-left: 50px; padding-bottom: 30px; place-content: center"
+                    class="stone responsive d-sm-none d-md-block">
+                <div class="up-text"
+                    style="justify-content: center; padding-left: 10px; padding-right: 10px; width: 100%; max-height: 300px; text-align: justify; margin: 5px;">
+                    <span><strong>Vadstena</strong> above all, is the city most noted for two important facts of Swedish
+                        history. It was in Vadstena, year 1350, that Saint Bridget of Sweden founded the first monastery
+                        of her Bridgettine Order, and Vadstena Castle is one of Sweden’s best-preserved castles from the
+                        era of Gustav Vasa in the 16th century, when Sweden became Protestant.</span>
+                    <hr><span class="mid-text"><strong>Vadstena</strong>Today the surviving buildings of the monastery
+                        are occupied by a hotel, (Vadstena Klosterhotel), and the castle houses the provincial archives
+                        and a museum of 16th and 17th century furniture, portraits and paintings.Since the 16th century,
+                        Vadstena has been the location of a hospital. Earlier in history, it mainly housed mental
+                        patients. Today, some of the oldest buildings present the Vadstena Hospital Museum.</span>
+                    <hr><span class="down-text"><strong>Vadstena</strong>Today the surviving buildings of the monastery
+                        are occupied by a hotel, (Vadstena Klosterhotel), and the castle houses the provincial archives
+                        and a museum of 16th and 17th century furniture, portraits and paintings.Since the 16th century,
+                        Vadstena has been the location of a hospital. Earlier in history, it mainly housed mental
+                        patients. Today, some of the oldest buildings present the Vadstena Hospital Museum.</span>
+                </div><img src="./assets/images/magnus.png" alt="#" style="padding-left: 50px; padding-bottom: 30px; float: right"
+                    class="king responsive">
+            </div>
+        </div>
+    </section>
+    <!--Explore Page-->
+    <section>
+        <div class="container-fluid bg-grn ">
+            <header>
+                <div id="explore" class="head-text">Explore!</div>
+            </header>
             <div class="row">
-                 <div class="col-md-6 bg-color-work-history section-column">
-                     <div><img src="./assets/images/stone.png" alt="stone"></div>
-                    </div>
-                <div class="col-md-6 bg-color-work-history section-column">
-                    <div class="row">
-                        <div class="col-6">
-                            <p class="timeline-heading">
-                                Work history
-                            </p>
-                        </div>
-                    </div>
-                    <div class="history-items">
-                        <div class="timeline-item" data-dates="800">
-                            <ul style="margin: 0px;">
-                                <li>First known settlement recorded from coins found by archeologists.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="timeline-item" data-dates="1100">
-                            <ul style="margin: 0px;">
-                                <li> Vadstena was a stop on the pilgrimage to Trondheim.</li>
-                            </ul>
-                        </div>
-                        <div class="timeline-item" data-dates="1200">
-                            <ul style="margin: 0px;">
-                                <li><strong>1268</strong>- Vadstena mentioned in a letter issued at the site by Birger
-                                    earl's brother Elof
-                                    Magnusson. Around the same time, a royal palace was built on the shores of Lake
-                                    Vättern.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="timeline-item" data-dates="1300">
-                            <ul style="margin: 0px;">
-                                <li><strong>1346</strong> - King Magnus Eriksson and Queen Blanka issued their will
-                                    in Lödöse , whereby
-                                    Vadstena royal estate, the farm Bjälbo and the parish Sväm in Ödeshög were donated
-                                    to St. Birgitta's planned monastery building.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="timeline-item" data-dates="1400">
-                            <ul style="margin: 0px;">
-                                <li><strong>1400</strong>Vadstena was granted a city privilege by Queen Margaret when
-                                    she visited the site together with Erik of Pomerania.
-                                </li>
-                                <li><strong>1430</strong>Vadstena Monastery Church was inaugurated in the presence of
-                                    King Erik of Pomerania and other high guests. </li>
-                                <li><strong>1490</strong>Construction began on the Vadstena Town Hall.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="timeline-item" data-dates="1500">
-                            <ul style="margin: 0px;">
-                                <li><strong>1545</strong> - Gustav Vasa decided that a fortification should be built in
-                                    Vadstena. Vadstena Castle was built from this time.
-                                </li>
-                                <li><strong>1567</strong> - Castle was besieged by Daniel Rantzau and his Danish troops.
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="timeline-item" data-dates="1700">
-                            <ul style="margin: 0px;">
-                                <li><strong>1716</strong> - The last royal to spend the night at the castle was Ulrika
-                                    Eleonora the younger. </li>
-                                <li><strong>1753</strong> - factory was established in the castle. </li>
-                            </ul>
-                        </div>
-                        <div class="timeline-item" data-dates="1800">
-                            <ul style="margin: 0px;">
-                                <li><strong>1829</strong> - Former convent premises that began to be used as a mental
-                                    hospital.</li>
-                                <li><strong>11874</strong> - Wadstena Fogelsta Railway completed.</li>
-                            </ul>
-                        </div>
-                        <div class="timeline-item" data-dates="1900">
-                            <ul style="margin: 0px;">
-                                <li><strong>1904</strong> - Vadstena received electric light from Motala ströms kraft AB
-                                </li>
-                                <li><strong>1997</strong> - Extensive work began on Vadstena Castle.</li>
-                            </ul>
-                        </div>
-                        <div class="timeline-item" data-dates="2000">
-                            <ul style="margin: 0px;">
-                                <li><strong>2021</strong> - Work completed on the new square. it will be 500 years since
-                                    Gustav Vasa made his entrance in Vadstena and was elected head of state.
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-        </section>
-        <!--Explore Page-->
-        <section>
-            <div class="container-fluid bg-grn ">
-                <header>
-                    <h1>Explore!</h1>
-                </header>
-                <div class="row">
-                    <div class="col-12">
-                        <div id="map"></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col ">
-                        <div><button class="btn btn-success " type="button" id="btn-site" name="btn-site"
-                                aria-label=""><span> Must see sites</span>
-                            </button></div>
-                    </div>
-                    <div class="col">
-                        <div><button class="btn btn-success " type="button" id="btn-stay" name="btn-stay"
-                                aria-label=""><span> Stay!</span>
-                            </button></div>
-                    </div>
-                    <div class="col">
-                        <div><button class="btn btn-success " type="button" id="btn-eat" name="btn-eat"
-                                onclick="showMarker('restMap')" aria-label="">
-                                <span>Eat!</span>
-                            </button></div>
-                    </div>
-                    <div class="col">
-                        <div><button class="btn btn-success " type="button" id="btn-shop" name="btn-shop"
-                                aria-label=""><span> Shop!</span>
-                            </button></div>
-                    </div>
+                <div class="col-12">
+                    <div id="map"></div>
                 </div>
             </div>
-        </section>
-        <section class="container-fluid">
-            <div class="row bg-color-contact">
-                <div>
-                    <h3 class="contact-heading uppercase text-center">Contact Us</h3>
-                    <h5 class="uppercase text-center">Let's work together</h5>
+            <div class="row">
+                <div class="col-3">
+                    <div><button class="btn btn-success " type="button" id="btn-site" name="btn-site"
+                            aria-label=""><span> Must see sites</span>
+                        </button></div>
                 </div>
-                <div class="center-form">
-                    <form onsubmit="return sendMail(this);">
-                        <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
-                        <input type="text" name="emailaddress" class="form-control" id="emailaddress"
-                            placeholder="Email" required />
-                        <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary"
-                            placeholder="Project Description" required></textarea>
-                        <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
-                    </form>
+                <div class=" col-12 col-3">
+                    <div><button class="btn btn-success " type="button" id="btn-stay" name="btn-stay"
+                            aria-label=""><span> Stay!</span>
+                        </button></div>
+                </div>
+                <div class="col-12 col-3">
+                    <div><button class="btn btn-success " type="button" id="btn-eat" name="btn-eat"
+                            onclick="showMarker('restMap')" aria-label="">
+                            <span>Eat!</span>
+                        </button></div>
+                </div>
+                <div class="col-12 col-3">
+                    <div><button class="btn btn-success " type="button" id="btn-shop" name="btn-shop"
+                            aria-label=""><span> Shop!</span>
+                        </button></div>
                 </div>
             </div>
-        </section>
-        <!--Footer-->
-
+        </div>
+    </section>
+    <section class="container-fluid">
+        <div class="row bg-color-contact">
+            <div>
+                <h3 class="contact-heading uppercase text-center">Contact Us</h3>
+                <h5 class="uppercase text-center">Let's work together</h5>
+            </div>
+            <div class="center-form">
+                <form onsubmit="return sendMail(this);">
+                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
+                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email"
+                        required />
+                    <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary"
+                        placeholder="Project Description" required></textarea>
+                    <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!--Footer-->
+    <footer id="foot-container" class=" container-fluid bg-footer-color">
+        <div class="row">
+            <div class="col-sm-2">
+            </div>
+            <div class="col-sm-8">
+                <ul class="list-inline media-links">
+                    <li class="list-inline-item"><a href="https://www.facebook.com" target="_blank"><i
+                                class="fab fa-facebook" aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
+                    </li>
+                    <li class="list-inline-item"><a href="https://www.youtube.com" target="_blank"><i
+                                class="fab fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span></a>
+                    </li>
+                    <li class="list-inline-item"><a href="https://www.soundcloud.com" target="_blank"><i
+                                class="fab fa-soundcloud" aria-hidden="true"></i>
+                            <span class="sr-only">Soundcloud</span></a>
+                    </li>
+                    <li class="list-inline-item"><a href="https://www.instagram.com" target="_blank"><i
+                                class="fab fa-instagram" aria-hidden="true"></i><span
+                                class="sr-only">Instagram</span></a>
+                    </li>
+                    <li class="list-inline-item"><a href="https://www.spotify.com" target="_blank"><i
+                                class="fab fa-spotify" aria-hidden="true"></i>
+                            <span class="sr-only">Spotify</span></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-sm-2">
+            </div>
+        </div>
         <!--Scripts-->
         <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmAxe4hButpCJylbzEyU-7eRTb3dhtVvk&callback=initMap">
@@ -266,6 +221,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
         </script>
+        <script src="./assets/js/copy.js"></script>
         <script src="./assets/js/sendemail.js"></script>
         <script src="./assets/js/maps.js"></script>
         <script src="./assets/js/slider.js"></script>
