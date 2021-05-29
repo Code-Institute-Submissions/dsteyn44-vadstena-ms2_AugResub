@@ -16,7 +16,7 @@
 
 <body>
     <!--The Header-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-navbar">
+    <nav class="navbar navbar-expand-lg navbar-light bg-navbar" style="padding-bottom: 0;">
         <a class="navbar-brand text-navbar" href="#"><span>
                 <h1>Vadstena Guide</h1>
             </span>
@@ -50,86 +50,101 @@
             <ul class="navbar-nav">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">
-                        <h5 id="home-txt-clr">Home</h5> <span class="sr-only">(current)</span>
+                        <h5 class="nav-text">Home!</h5>
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Our Story</a>
+                    <a class="nav-link" href="index.html#story">
+                        <h5 class="nav-text">Our Story</h5>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Explore!</a>
+                    <a class="nav-link" href="index.html#explore">
+                        <h5 class="nav-text">Explore</h5>
+                    </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact Us!</a>
+                    <a class="nav-link" href="index.html#any-questions">
+                        <h5 class="nav-text">Any Question?</h5>
+                    </a>
                 </li>
             </ul>
         </div>
     </nav>
     <!--Home Page-->
-    <div class="container-fluid bg-home-container" style="
-    padding-left: 0px;
-    padding-right: 0px;">
+    <section class="container-fluid bg-home-container ">
         <div class="row">
-            <div class="col"></div>
-            <div class="col"></div>
-            <div class="col">
+            <div class="container pt-3">
                 <!--Weather Date and Time Container-->
                 <!--credit to Jonah lawrance on Youtube for the code-->
-                <div class="container-fluid weather-container">
-                    <div class="weather-card d-flex  align-items-center">
-                        <div class="weather justify-content-center">
-                            <h3 class="city d-flex justify-content-center">Weather in Vadstena:</h3>
-                            <div class="temp d-flex justify-content-center">23°C</div>
-                            <div class="flex">
+                <div class=" mx-auto d-inline-flex">
+                        <div class="climate-container d-inline-flex">
+                            <div class="jumbo-container weather">
+                                <h4 class="city">Weather in Vadstena</h4>
+                                <div class="lead temp">0°C</div>
                                 <img src="https://openweathermap.org/img/wn/01n@2x.png" alt="" class="icon">
-                                <div class="description">Cloudy</div>
+                                <h5 class="lead description clim-text">cloudy</h5>
                             </div>
-                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <!--Hero Text-->
-            <div class="col col-home-size home-text"><a href="index.html#explore">Explore</a><span></span> our quaint
-                town by the lake</span></div>
         </div>
-    </div>
-    <!--Weekly event Slider Create card divs- credit to Basir Payenda-->
-    <!-- I have added a section as I do not want this influencing the rest of my mark-up-->
-    <!--Our Story Page-->
-    <section id="bg-oge">
-        <button class="accordion">Section 1</button>
-        <div class="panel">
-            <div class="acc-main-container">
-                <img src="./assets/images/stone.png" alt="#" style="padding-left: 50px; padding-bottom: 30px; place-content: center"
-                    class="stone responsive d-sm-none d-md-block">
-                <div class="up-text"
-                    style="justify-content: center; padding-left: 10px; padding-right: 10px; width: 100%; max-height: 300px; text-align: justify; margin: 5px;">
-                    <span><strong>Vadstena</strong> above all, is the city most noted for two important facts of Swedish
-                        history. It was in Vadstena, year 1350, that Saint Bridget of Sweden founded the first monastery
-                        of her Bridgettine Order, and Vadstena Castle is one of Sweden’s best-preserved castles from the
-                        era of Gustav Vasa in the 16th century, when Sweden became Protestant.</span>
-                    <hr><span class="mid-text"><strong>Vadstena</strong>Today the surviving buildings of the monastery
-                        are occupied by a hotel, (Vadstena Klosterhotel), and the castle houses the provincial archives
-                        and a museum of 16th and 17th century furniture, portraits and paintings.Since the 16th century,
-                        Vadstena has been the location of a hospital. Earlier in history, it mainly housed mental
-                        patients. Today, some of the oldest buildings present the Vadstena Hospital Museum.</span>
-                    <hr><span class="down-text"><strong>Vadstena</strong>Today the surviving buildings of the monastery
-                        are occupied by a hotel, (Vadstena Klosterhotel), and the castle houses the provincial archives
-                        and a museum of 16th and 17th century furniture, portraits and paintings.Since the 16th century,
-                        Vadstena has been the location of a hospital. Earlier in history, it mainly housed mental
-                        patients. Today, some of the oldest buildings present the Vadstena Hospital Museum.</span>
-                </div><img src="./assets/images/magnus.png" alt="#" style="padding-left: 50px; padding-bottom: 30px; float: right"
-                    class="king responsive">
+        <div class="clock-container">
+            <p style="margin-bottom: 0; font-size: 20px;">The current date & time is...</p>
+            <div class="clim-text" id="clockDisplay">
+            </div>
+        </div>
+            <div class="container pt-3">
+                <div class="col-12 col-home-size home-text"><a href="index.html#explore">Explore</a><span></span> our
+                    quaint
+                    town by the lake</span>
+                </div>
+                <!--Hero Text-->
             </div>
         </div>
     </section>
+    <!--Weekly event Slider Create card divs- credit to Basir Payenda-->
+    <!-- I have added a section as I do not want this influencing the rest of my mark-up-->
+    <!--Our Story Page-->
+    <div class="container-fluid bg-oge">
+          <div id="story" class="head-text">Our Story</div>
+        <div class="story-container">
+            <div class="up-text">
+                <span><strong>Vadstena</strong> above all, is the city most noted for two important facts of Swedish
+                    history. It was in Vadstena, year 1350, that Saint Birgitta of Sweden founded the first monastery
+                    of her Bridgettine Order, and Vadstena Castle is one of Sweden’s best-preserved castles from the
+                    era of Gustav Vasa in the 16th century, when Sweden became Protestant.</span>
+                <hr><span class="mid-text"><strong>The first</strong> known settlement recorded was recorded by archeologists as being 800AD. In the 1100's it was more popular as a stopping point for a pilgramage to Trondheim, Norway. King Magnus Eriksson and Queen Blanka issued their will in Lödöse , whereby Vadstena royal estate, the farm Bjälbo and the parish Sväm in Ödeshög were donated to St. Birgitta's planned monastery building.</span>
+                <hr><span class="down-text"><strong>Today</strong> the surviving buildings of the monastery
+                    are occupied by a hotel, (Vadstena Klosterhotel), and the castle houses the provincial archives
+                    and a museum of 16th and 17th century furniture, portraits and paintings.Since the 16th century,
+                    Vadstena has been the location of a hospital. Earlier in history, it mainly housed mental
+                    patients. Today, some of the oldest buildings present the Vadstena Hospital Museum.</span>
+        </div>
+        <!-----galllery c/o W3 schools-->
+    </div>
+    <div class="row" >
+  <div class="column">
+    <img src="/assets/images/stone.png" class="responsive" alt="pilgrim" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/assets/images/birgitta.png"  class="responsive" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/assets/images/magnus.png"  class="responsive" alt="Mountains" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="/assets/images/town-hall.png"  class="responsive" alt="Forest" style="width:100%">
+  </div>
+</div>
+    </div>
     <!--Explore Page-->
     <section>
         <div class="container-fluid bg-grn ">
             <header>
                 <div id="explore" class="head-text">Explore!</div>
+                <p>This is your portal to the town of Vadstena. Just click on our recommendations and peruse.</p>
             </header>
             <div class="row">
                 <div class="col-12">
@@ -137,35 +152,35 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-3">
-                    <div><button class="btn btn-success " type="button" id="btn-site" name="btn-site"
+                <div class="col-12 col-6 col-3">
+                    <div><button class="btn btn-success btn-drk-gr" type="button" id="btn-site" name="btn-site"
                             aria-label=""><span> Must see sites</span>
                         </button></div>
                 </div>
-                <div class=" col-12 col-3">
-                    <div><button class="btn btn-success " type="button" id="btn-stay" name="btn-stay"
+                <div class="col-12 col-6 col-3">
+                    <div><button class="btn btn-success btn-drk-gr" type="button" id="btn-stay" name="btn-stay"
                             aria-label=""><span> Stay!</span>
                         </button></div>
                 </div>
-                <div class="col-12 col-3">
-                    <div><button class="btn btn-success " type="button" id="btn-eat" name="btn-eat"
-                            onclick="showMarker('restMap')" aria-label="">
+                <div class="col-12 col-6 col-3">
+                    <div><button class="btn btn-success btn-drk-gr" type="button" id="btn-eat" name="btn-eat"
+                            aria-label="">
                             <span>Eat!</span>
                         </button></div>
                 </div>
-                <div class="col-12 col-3">
-                    <div><button class="btn btn-success " type="button" id="btn-shop" name="btn-shop"
+                <div class="col-12 col-6 col-3">
+                    <div><button class="btn btn-success btn-drk-gr" type="button" id="btn-shop" name="btn-shop"
                             aria-label=""><span> Shop!</span>
                         </button></div>
                 </div>
             </div>
         </div>
     </section>
-    <section class="container-fluid">
-        <div class="row bg-color-contact">
+    <section class="container-fluid contact-container">
+        <div class="row">
             <div>
-                <h3 class="contact-heading uppercase text-center">Contact Us</h3>
-                <h5 class="uppercase text-center">Let's work together</h5>
+            <div id="any-questions" class="head-text">Any Questions?</div>
+                <h5 class="uppercase text-center">Contact us and We can be your guide!</h5>
             </div>
             <div class="center-form">
                 <form onsubmit="return sendMail(this);">
@@ -174,7 +189,8 @@
                         required />
                     <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary"
                         placeholder="Project Description" required></textarea>
-                    <button type="submit" class="btn btn-secondary center-block">Send Project Request</button>
+                    <button type="submit" class="btn btn-secondary center-block">
+                    </button>
                 </form>
             </div>
         </div>
@@ -187,45 +203,39 @@
             <div class="col-sm-8">
                 <ul class="list-inline media-links">
                     <li class="list-inline-item"><a href="https://www.facebook.com" target="_blank"><i
-                                class="fab fa-facebook" aria-hidden="true"></i><span class="sr-only">Facebook</span></a>
+                                class="fab fa-tripadvisor" aria-hidden="true"></i><span
+                                class="sr-only">Facebook</span></a>
                     </li>
                     <li class="list-inline-item"><a href="https://www.youtube.com" target="_blank"><i
                                 class="fab fa-youtube" aria-hidden="true"></i>
                             <span class="sr-only">Twitter</span></a>
-                    </li>
-                    <li class="list-inline-item"><a href="https://www.soundcloud.com" target="_blank"><i
-                                class="fab fa-soundcloud" aria-hidden="true"></i>
-                            <span class="sr-only">Soundcloud</span></a>
-                    </li>
                     <li class="list-inline-item"><a href="https://www.instagram.com" target="_blank"><i
                                 class="fab fa-instagram" aria-hidden="true"></i><span
                                 class="sr-only">Instagram</span></a>
-                    </li>
-                    <li class="list-inline-item"><a href="https://www.spotify.com" target="_blank"><i
-                                class="fab fa-spotify" aria-hidden="true"></i>
-                            <span class="sr-only">Spotify</span></a>
                     </li>
                 </ul>
             </div>
             <div class="col-sm-2">
             </div>
         </div>
-        <!--Scripts-->
-        <script async defer
-            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmAxe4hButpCJylbzEyU-7eRTb3dhtVvk&callback=initMap">
-        </script>
-        <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-        </script>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
-        </script>
-        <script src="./assets/js/copy.js"></script>
-        <script src="./assets/js/sendemail.js"></script>
-        <script src="./assets/js/maps.js"></script>
-        <script src="./assets/js/slider.js"></script>
-        <script src="./assets/js/script.js"></script>
+    </footer>
+    <!--Scripts-->
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmAxe4hButpCJylbzEyU-7eRTb3dhtVvk&callback=initMap">
+    </script>
+    <script src="//ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous">
+    </script>
+    <script src="./assets/js/clock.js"></script>
+    <script src="./assets/js/copy.js"></script>
+    <script src="./assets/js/sendemail.js"></script>
+    <script src="./assets/js/maps.js"></script>
+    <script src="./assets/js/slider.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

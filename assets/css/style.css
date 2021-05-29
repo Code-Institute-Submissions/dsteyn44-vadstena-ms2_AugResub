@@ -64,7 +64,7 @@ body {
 .bg-navbar {
     background-color: olivedrab;
 }
-
+/*-------main image-------*//* - i decidef to fixed it */
 .bg-home-container {
     background: url('../images/horse.png') no-repeat center center fixed;
     background-size: cover;
@@ -78,17 +78,18 @@ body {
     z-index: -1;
 }
 
+/*-------main Title-------*/
 .home-text a{
     font-size: 75px;
     text-align: center;
-    color: ivory;
+      color: rgba(224, 172, 26)
 }
 
 @media (max-width: 767.98px) { 
 .home-text a{
     font-size: 50px;
     text-align: center;
-    color: ivory;
+    color: rgba(224, 172, 26)
 }
 }
 
@@ -110,6 +111,7 @@ body {
 }
 */
 
+
 .bg-grn {
   background-color: rgba(6, 153, 1, 0.8);
 }
@@ -119,27 +121,31 @@ body {
   padding-top: 50px;
 }
 
-.bg--story {
-    background-color: chocolate;
-    height: 100vh;
-    min-width: 100%;
-}
-
 .bg-explore {
     background-color: olivedrab;
     height: 100vh;
     min-width: 100%;
 }
 
-/*-------Navbar-------*/
+/*-----##################################  Navbar #######################################-------*/
 nav a span h1 {
     color: ivory;
 }
 
-#home-txt-clr {
+#nav-home-text {
   color: ivory;  
 }
 
+.nav-text {
+color: ivory;
+margin-bottom: 0;
+}
+
+
+.nav-text:hover {
+color: red;
+margin-bottom: 0;
+}
 #tm-sm {
     font-size: x-small;
     bottom: 20px;
@@ -153,6 +159,10 @@ nav a span h1 {
     height: 50px;
 }
 
+#icon-size:hover svg {
+    fill: red;
+}
+
 .navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
@@ -162,29 +172,79 @@ nav a span h1 {
     box-shadow: none;
 }
 
-/*-----Home Page-------*/
-.container-size {
-    max-width: 100%;
-    height: 100px;
-    
+/*-----##################################  Home Page #######################################-------*/
+
+/*-----##################################  Weather #######################################-------*/
+
+/*----previous attempt at a container did not work- moved to jumbotron instead---*
+.climate-container { 
+height: 50vh;
+margin: 10px;
+padding: 10px;
+border-radius: 10px;
+background-color: rgba(28, 173, 0, .8);
+display: grid;
+place-content: center;
+grid-template-columns: 1fr;
 }
-.col {
+/*
+.climate-box {
+ background-color: grey;
+ padding: 20px;
+ border: 10px solid red;
+}*/
+
+.climate-container{
+    background-color: rgba(28, 173, 0, .8);
+    margin-top: 10px;
     width: 200px;
-    min-height: auto;
+    height: 200px;
+    place-content: center;
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+    float: left;
 }
+
+.jumbo-container { 
+   width: 200px;
+   height: 200px; 
+   position: relative;
+   text-align: center; /*-----centering all text-----*/
+   text-justify: center;
+}
+
+.clock-container {
+    background: rgba(158, 11, 11, .8);
+    height: 100px;
+    width: 300px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 25px;
+    text-align: center;
+    text-justify: center;
+    border-radius: 5px;
+    position: relative;
+}
+
+.clim-text {
+  font-family: 'Roboto', sans-serif;
+}
+
+/*-----##################################  Hero text #######################################-------*/
 
 .col-home-size {
-    height: 600px;
+  min-width: 100%;
+    height: 100px; 
 }
 
-/*-----Hero text-------*/
 .home-text {
 text-align: center;
 text-justify: auto;
 margin-top: 100px;
 font-size: 100px;
 }
-
 
 @media (max-width: 767.98px) { 
 .home-text {
@@ -194,27 +254,62 @@ margin-top: 100px;
 font-size: 50px;
 }
 }
+
+
+
+
 /*-----Slider-------*/
 
 /*-------Our Story Page------- accordian taken from W3school
 I also used CSS grid for the accordian */
 /*Style the buttons that are used to open and close the accordion panel */
 
+/*.responsive {
+  width: 100%;
+  height: auto;
+}*/
+
+.story-container {
+max-width: 100%;
+padding-left: 10px;
+padding-right: 10px;
+}
+
+/*-----History Gallery------*/
+
 .responsive {
   width: 100%;
+  max-width: 200px;
   height: auto;
 }
 
-.acc-main-container {
-  place-content: center;
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+/* Create three equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+  /*---------------
+    place-content: center;
   padding-top: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 40% 20%;
   grid-template-areas: 
-  "s u k"
+  "u u u"
   "s m k"
-  "s d k";
+  "d d d";
 }
 
 .stone {
@@ -330,11 +425,16 @@ I also used CSS grid for the accordian */
   font-size: 90%;
 }
 
-
+}
 
 /*-------making the image appear and disappear with a hover pseudo element------*/
 
 /*-------Explore Page-------*/
+
+#explore {
+    padding-bottom: 30px;
+}
+
 #map {
  width: 100%;  
  height: 500px; 
@@ -345,14 +445,38 @@ I also used CSS grid for the accordian */
 }
 
 
+/*-------Explore button container-------*/
+.expl-btn-container {
+    display: inline-block;
+    padding-top: 5px,;
+    padding-bottom: 5px,
+}
 
+.btn {
+    min-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: none;
+    margin: 3px;
+}
 
+.btn-drk-gr {
+    background-color: rgb(4, 82, 4);
+}
 
-
+.btn-drk-gr:hover {
+    background-color: rgb(6, 185, 6);
+}
+/*-------Footer Page-------*/
+.contact-container {
+    height: auto;
+    padding: 50px;
+    margin-bottom: 10px;
+}
 
 /*-------Footer Page-------*/
 .bg-footer-color {
-    background-color: black;
+    background-color: green;
 }
 
 .foot-row-align {
