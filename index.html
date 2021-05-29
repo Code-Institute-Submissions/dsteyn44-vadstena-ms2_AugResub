@@ -10,13 +10,17 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-    </script>
-    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+        </script>
+        <script type="text/javascript">
+            (function () {
+                emailjs.init("user_RlwLiQrtBYFAbn2bBtPrh");
+            })();
+        </script>
 </head>
 
 <body>
     <!--The Header-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-navbar" style="padding-bottom: 0;">
+    <nav class="navbar navbar-expand-lg bg-navbar" style="padding-bottom: 0;">
         <a class="navbar-brand text-navbar" href="#"><span>
                 <h1>Vadstena Guide</h1>
             </span>
@@ -70,129 +74,135 @@
                 </li>
             </ul>
         </div>
+        </div>
     </nav>
     <!--Home Page-->
-    <section class="container-fluid bg-home-container ">
+    <div class="container-fluid bg-home-container">
         <div class="row">
-            <div class="container pt-3">
+            <div class="container d-inline-flex">
                 <!--Weather Date and Time Container-->
                 <!--credit to Jonah lawrance on Youtube for the code-->
-                <div class=" mx-auto d-inline-flex">
-                        <div class="climate-container d-inline-flex">
-                            <div class="jumbo-container weather">
-                                <h4 class="city">Weather in Vadstena</h4>
-                                <div class="lead temp">0°C</div>
-                                <img src="https://openweathermap.org/img/wn/01n@2x.png" alt="" class="icon">
-                                <h5 class="lead description clim-text">cloudy</h5>
-                            </div>
+                <div class="climate-container d-inline-flex">
+                    <div class="jumbo-container weather">
+                        <h4 class="city">Weather in Vadstena</h4>
+                        <div class="lead temp">0°C</div>
+                        <img src="https://openweathermap.org/img/wn/01n@2x.png" alt="" class="icon">
+                        <h5 class="lead description clim-text">cloudy</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="container-md">
+                <div class="row">
+                    <div class="col mx-auto">
                     </div>
                 </div>
             </div>
         </div>
-        </div>
         <div class="clock-container">
             <p style="margin-bottom: 0; font-size: 20px;">The current date & time is...</p>
-            <div class="clim-text" id="clockDisplay">
+            <div class="alt-text" id="clockDisplay">
             </div>
         </div>
-            <div class="container pt-3">
-                <div class="col-12 col-home-size home-text"><a href="index.html#explore">Explore</a><span></span> our
+        <div class="container pt-3">
+            <div class="col-12 col-home-size home-text"><a href="index.html#explore">Explore</a><span> our
                     quaint
                     town by the lake</span>
-                </div>
-                <!--Hero Text-->
             </div>
+            <!--Hero Text-->
         </div>
-    </section>
+    </div>
     <!--Weekly event Slider Create card divs- credit to Basir Payenda-->
     <!-- I have added a section as I do not want this influencing the rest of my mark-up-->
     <!--Our Story Page-->
     <div class="container-fluid bg-oge">
-          <div id="story" class="head-text">Our Story</div>
+        <div id="story" class="head-text">Our Story (Vara Saga) ...</div>
         <div class="story-container">
             <div class="up-text">
-                <span><strong>Vadstena</strong> above all, is the city most noted for two important facts of Swedish
-                    history. It was in Vadstena, year 1350, that Saint Birgitta of Sweden founded the first monastery
-                    of her Bridgettine Order, and Vadstena Castle is one of Sweden’s best-preserved castles from the
-                    era of Gustav Vasa in the 16th century, when Sweden became Protestant.</span>
-                <hr><span class="mid-text"><strong>The first</strong> known settlement recorded was recorded by archeologists as being 800AD. In the 1100's it was more popular as a stopping point for a pilgramage to Trondheim, Norway. King Magnus Eriksson and Queen Blanka issued their will in Lödöse , whereby Vadstena royal estate, the farm Bjälbo and the parish Sväm in Ödeshög were donated to St. Birgitta's planned monastery building.</span>
-                <hr><span class="down-text"><strong>Today</strong> the surviving buildings of the monastery
-                    are occupied by a hotel, (Vadstena Klosterhotel), and the castle houses the provincial archives
-                    and a museum of 16th and 17th century furniture, portraits and paintings.Since the 16th century,
-                    Vadstena has been the location of a hospital. Earlier in history, it mainly housed mental
-                    patients. Today, some of the oldest buildings present the Vadstena Hospital Museum.</span>
+                <span><strong>Vadstena</strong><span class="alt-text"> above all, is the city most noted for two
+                        important facts of Swedish
+                        history. It was in Vadstena, year 1350, that Saint Birgitta of Sweden founded the first
+                        monastery
+                        of her Bridgettine Order, and Vadstena Castle is one of Sweden’s best-preserved castles from the
+                        era of Gustav Vasa in the 16th century, when Sweden became Protestant.</span></span>
+                <hr><span class="mid-text"><strong>The first</strong><span class="alt-text"> known settlement recorded
+                        was recorded by archeologists as being 800AD. In the 1100's it was more popular as a stopping
+                        point for a pilgramage to Trondheim, Norway. King Magnus Eriksson and Queen Blanka issued their
+                        will in Lödöse , whereby Vadstena royal estate, the farm Bjälbo and the parish Sväm
+                        in Ödeshög were donated to St. Birgitta's planned monastery building.</span></span>
+                <hr><span class="down-text"><strong>Today</strong><span class="alt-text"> the surviving buildings of the
+                        monastery
+                        are occupied by a hotel, (Vadstena Klosterhotel), and the castle houses the provincial archives
+                        and a museum of 16th and 17th century furniture, portraits and paintings.Since the 16th century,
+                        Vadstena has been the location of a hospital. Earlier in history, it mainly housed mental
+                        patients. Today, some of the oldest buildings present the Vadstena Hospital
+                        Museum.</span></span>
+            </div>
+            <!-----galllery c/o W3 schools-->
         </div>
-        <!-----galllery c/o W3 schools-->
-    </div>
-    <div class="row" >
-  <div class="column">
-    <img src="/assets/images/stone.png" class="responsive" alt="pilgrim" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="/assets/images/birgitta.png"  class="responsive" alt="Forest" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="/assets/images/magnus.png"  class="responsive" alt="Mountains" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="/assets/images/town-hall.png"  class="responsive" alt="Forest" style="width:100%">
-  </div>
-</div>
+        <div class="row">
+            <div class="column">
+                <img src="/assets/images/stone.png" class="responsive" alt="stone" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="/assets/images/birgitta.png" class="responsive" alt="birgitta" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="/assets/images/magnus.png" class="responsive" alt="magnus" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="/assets/images/town-hall.png" class="responsive" alt="town-hall" style="width:100%">
+            </div>
+        </div>
     </div>
     <!--Explore Page-->
     <section>
         <div class="container-fluid bg-grn ">
             <header>
                 <div id="explore" class="head-text">Explore!</div>
-                <p>This is your portal to the town of Vadstena. Just click on our recommendations and peruse.</p>
+                <p id="exp-par-text"><strong>This</strong><span class="alt-text"> is your portal to the town of
+                        Vadstena. Just click on our recommendations and peruse. to your hearts content!</span></p>
             </header>
             <div class="row">
                 <div class="col-12">
                     <div id="map"></div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-12 col-6 col-3">
-                    <div><button class="btn btn-success btn-drk-gr" type="button" id="btn-site" name="btn-site"
-                            aria-label=""><span> Must see sites</span>
-                        </button></div>
-                </div>
-                <div class="col-12 col-6 col-3">
-                    <div><button class="btn btn-success btn-drk-gr" type="button" id="btn-stay" name="btn-stay"
-                            aria-label=""><span> Stay!</span>
-                        </button></div>
-                </div>
-                <div class="col-12 col-6 col-3">
-                    <div><button class="btn btn-success btn-drk-gr" type="button" id="btn-eat" name="btn-eat"
-                            aria-label="">
-                            <span>Eat!</span>
-                        </button></div>
-                </div>
-                <div class="col-12 col-6 col-3">
-                    <div><button class="btn btn-success btn-drk-gr" type="button" id="btn-shop" name="btn-shop"
-                            aria-label=""><span> Shop!</span>
-                        </button></div>
+            <div class="btn-exp-container" style="justify-content: center;">
+                <!---- <div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" id="btn-site" name="btn-site" aria-label="" class="btn btn-secondary">Must See!</button>
+  <button type="button" id="btn-stay" name="btn-stay" aria-label="" class="btn btn-secondary">Middle</button>
+  <button type="button" id="btn-eat" name="btn-eat" aria-label="" class="btn btn-secondary">Middle</button>
+  <button type="button" id="btn-shop" name="btn-shop" aria-label="" class="btn btn-secondary">Right</button>
+</div>-->
+                <div class="d-grid gap-4 d-md-block">
+                    <button class="btn btn-primary btn-exp-text btn--bl" id="btn-site" name="btn-site" aria-label="" type="button">Must
+                        See!</button>
+                    <button class="btn btn-primary btn-exp-text btn--yw" id="btn-stay" name="btn-stay" type="button">Stay!</button>
+                    <button class="btn btn-primary btn-exp-text btn--rd" id="btn-eat" name="btn-eat" aria-label=""
+                        type="button">Eat!</button>
+                    <button class="btn btn-primary btn-exp-text btn--gr" id="btn-shop" name="btn-shop" aria-label=""
+                        type="button">Shop!</button>
                 </div>
             </div>
         </div>
+        </div>
     </section>
+    <!------------ Contact Page-- I worked this over with the Code institute video---->
     <section class="container-fluid contact-container">
-        <div class="row">
-            <div>
+        <div>
             <div id="any-questions" class="head-text">Any Questions?</div>
-                <h5 class="uppercase text-center">Contact us and We can be your guide!</h5>
-            </div>
-            <div class="center-form">
-                <form onsubmit="return sendMail(this);">
-                    <input type="text" name="name" class="form-control" id="fullname" placeholder="Name" required />
-                    <input type="text" name="emailaddress" class="form-control" id="emailaddress" placeholder="Email"
-                        required />
-                    <textarea rows="5" name="projectsummary" class="form-control" id="projectsummary"
-                        placeholder="Project Description" required></textarea>
-                    <button type="submit" class="btn btn-secondary center-block">
-                    </button>
-                </form>
-            </div>
+            <h5 class="uppercase text-center alt-text">Contact us and We can be your guide!</h5>
+        </div>
+        <div class="center-form">
+            <form onsubmit="return sendMail(this);">
+                <input type="text" name="name" class="form-control alt-text" id="fullname" placeholder="Name" required />
+                <input type="text" name="emailaddress" class="form-control alt-text" id="emailaddress" placeholder="Email"
+                    required />
+                <textarea rows="5" name="projectsummary" class="form-control alt-text" id="projectsummary"
+                    placeholder="Let us know here how we can help you?" required></textarea>
+                <button type="submit" class="btn btn-success center-block" onclick="myFunction()" >Submit
+                </button>
+            </form>
         </div>
     </section>
     <!--Footer-->
@@ -202,7 +212,7 @@
             </div>
             <div class="col-sm-8">
                 <ul class="list-inline media-links">
-                    <li class="list-inline-item"><a href="https://www.facebook.com" target="_blank"><i
+                    <li class="list-inline-item"><a href="https://www.tripadvisor.com" target="_blank"><i
                                 class="fab fa-tripadvisor" aria-hidden="true"></i><span
                                 class="sr-only">Facebook</span></a>
                     </li>
@@ -212,6 +222,9 @@
                     <li class="list-inline-item"><a href="https://www.instagram.com" target="_blank"><i
                                 class="fab fa-instagram" aria-hidden="true"></i><span
                                 class="sr-only">Instagram</span></a>
+                    <li class="list-inline-item"><a href="https://www.facebookcom" target="_blank"><i
+                                class="fab fa-facebook" aria-hidden="true"></i><span
+                                class="sr-only">Instagram</span></a>
                     </li>
                 </ul>
             </div>
@@ -219,7 +232,15 @@
             </div>
         </div>
     </footer>
+   <!--Script below comes form W3schools Alert- good for defensive design-->
+    <script>
+function myFunction() {
+  alert("Tack så mycket!Thanks for sending us an email");
+}
+</script>
+    </script>
     <!--Scripts-->
+
     <script async defer
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmAxe4hButpCJylbzEyU-7eRTb3dhtVvk&callback=initMap">
     </script>

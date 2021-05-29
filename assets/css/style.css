@@ -1,6 +1,7 @@
 /*-------Fonts-------*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Indie+Flower&family=Nosifer&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
 /*-------Body-------*/
 
 html,body{
@@ -15,8 +16,13 @@ html,body{
 
 body {
  font-family: 'Berkshire Swash', cursive;
- color: ivory;;
- background-color: #FF9F55;
+ color: rgb(255, 225, 175);
+ background-color:  rgba(255, 44, 14 );
+}
+
+.alt-text {
+  font-family: 'Rubik', sans-serif;
+  font-size: 20px;
 }
 
 /*----- I have tried a hover (which was successful but annoying and now an accordian which does not work
@@ -62,11 +68,11 @@ body {
 /*-------Background and color-------*/
 /*Changed the color of the navbar*/
 .bg-navbar {
-    background-color: olivedrab;
+    background-color: rgba(255, 44, 14, .8);
 }
 /*-------main image-------*//* - i decidef to fixed it */
 .bg-home-container {
-    background: url('../images/horse.png') no-repeat center center fixed;
+    background: url('../images/hero-castle\ .png') no-repeat center center fixed;
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -78,26 +84,7 @@ body {
     z-index: -1;
 }
 
-/*-------main Title-------*/
-.home-text a{
-    font-size: 75px;
-    text-align: center;
-      color: rgba(224, 172, 26)
-}
 
-@media (max-width: 767.98px) { 
-.home-text a{
-    font-size: 50px;
-    text-align: center;
-    color: rgba(224, 172, 26)
-}
-}
-
-.head-text {
-    font-size: 50px;
-    text-align: center;
-    color: ivory;
-}
 /*--@media (min-width: 575.98px) { 
 
 .bg-home-container {
@@ -111,39 +98,38 @@ body {
 }
 */
 
-
 .bg-grn {
-  background-color: rgba(6, 153, 1, 0.8);
+  background-color: rgba(28, 173, 0);
+  justify-content: center;
 }
 
 #bg-oge {
-  background-color: #FF9F55;;
+  background-color:  rgba(255, 44, 14 );
   padding-top: 50px;
 }
 
 .bg-explore {
-    background-color: olivedrab;
+    background-color: rgba(28, 173, 0);
     height: 100vh;
     min-width: 100%;
 }
 
 /*-----##################################  Navbar #######################################-------*/
 nav a span h1 {
-    color: ivory;
+    color: rgb(255, 225, 175);
 }
 
 #nav-home-text {
-  color: ivory;  
+  color: rgb(255, 225, 175);  
 }
 
 .nav-text {
-color: ivory;
+color: rgb(255, 225, 175);
 margin-bottom: 0;
 }
 
-
 .nav-text:hover {
-color: red;
+color: rgba(28, 173, 0, .8);
 margin-bottom: 0;
 }
 #tm-sm {
@@ -154,13 +140,9 @@ margin-bottom: 0;
 
 #icon-size {
     background-color: olivedrab;
-    fill: ivory;
+    fill: rgb(255, 225, 175);
     width: 50px;
     height: 50px;
-}
-
-#icon-size:hover svg {
-    fill: red;
 }
 
 .navbar-toggler,
@@ -197,26 +179,26 @@ grid-template-columns: 1fr;
 .climate-container{
     background-color: rgba(28, 173, 0, .8);
     margin-top: 10px;
-    width: 200px;
+    width: 230px;
     height: 200px;
     place-content: center;
     border-radius: 10px;
     padding: 20px;
-    position: relative;
-    float: left;
+    position: absolute;
+    float: right;
 }
 
-.jumbo-container { 
+.jumbo-container {
    width: 200px;
    height: 200px; 
-   position: relative;
+   position: absolute;
    text-align: center; /*-----centering all text-----*/
    text-justify: center;
 }
 
 .clock-container {
-    background: rgba(158, 11, 11, .8);
-    height: 100px;
+    background: rgba(255, 44, 14, .8);
+    height: 120px;
     width: 300px;
     padding: 10px;
     margin-top: 10px;
@@ -226,11 +208,22 @@ grid-template-columns: 1fr;
     text-justify: center;
     border-radius: 5px;
     position: relative;
+    float:right;
 }
 
-.clim-text {
-  font-family: 'Roboto', sans-serif;
+
+@media (max-width: 575.98px) { 
+.clock-container {
+    margin-top: 200px;
 }
+}
+
+@media (max-width: 767.98px) { 
+.clock-container {
+    margin-top: 200px;
+}
+}
+
 
 /*-----##################################  Hero text #######################################-------*/
 
@@ -242,20 +235,65 @@ grid-template-columns: 1fr;
 .home-text {
 text-align: center;
 text-justify: auto;
-margin-top: 100px;
-font-size: 100px;
+margin-top: 250px;
+font-size: 80px;
+color: ivory;
 }
+
 
 @media (max-width: 767.98px) { 
 .home-text {
 text-align: center;
 text-justify: auto;
-margin-top: 100px;
+margin-top: 300px;
 font-size: 50px;
+color: ivory;
 }
 }
 
+@media (max-width: 575.98px) { 
+.home-text {
+text-align: center;
+text-justify: auto;
+margin-top: 200px;
+font-size: 50px;
+color: ivory;
+}
+}
 
+.home-text a{
+    font-size: 80px;
+    text-align: center;
+    text-transform: none;
+    color: ivory;
+}
+
+.home-text a:hover {
+    font-size: 80px;
+    text-align: center;
+    text-transform: none;
+    color: rgba(28, 173, 0, .8);
+}
+
+
+@media (max-width: 767.98px) { 
+
+.home-text a{
+    font-size: 50px;
+}
+
+.home-text a:hover {
+    font-size: 50px;
+    text-align: center;
+    color: rgba(28, 173, 0, .8);
+}
+}
+
+.head-text {
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 225, 175);
+}
 
 
 /*-----Slider-------*/
@@ -430,15 +468,19 @@ padding-right: 10px;
 /*-------making the image appear and disappear with a hover pseudo element------*/
 
 /*-------Explore Page-------*/
+#exp-par-text {
+text-align: center;
+}
 
 #explore {
     padding-bottom: 30px;
 }
 
 #map {
+align-items: center;
  width: 100%;  
  height: 500px; 
- border: 2px solid ivory;
+ border: 4px solid rgb(255, 225, 175);
  border-radius: 10px;
  padding-left: 30px;
  padding-right: 30px;
@@ -446,37 +488,90 @@ padding-right: 10px;
 
 
 /*-------Explore button container-------*/
-.expl-btn-container {
-    display: inline-block;
-    padding-top: 5px,;
-    padding-bottom: 5px,
+
+
+.row-btn {
+    display: flex;
 }
 
-.btn {
-    min-width: 100%;
-    height: auto;
-    border-radius: 10px;
-    border: none;
-    margin: 3px;
+.btn-exp-container {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 100%;
+    height: 100px;
 }
 
-.btn-drk-gr {
-    background-color: rgb(4, 82, 4);
+.btn-col {
+ flex: 25%;
+ padding: 10px;
 }
 
-.btn-drk-gr:hover {
-    background-color: rgb(6, 185, 6);
+.btn-exp-text {
+color: rgb(255, 225, 175);
 }
+
+.btn--rd {
+    background-color: rgba(255, 44, 14);
+    border-color: rgb(255, 225, 175);
+}
+
+.btn--rd:hover {
+    background-color: rgb(255, 225, 175);
+     border-color: rgba(255, 44, 14);
+}
+
+.btn--bl {
+    background-color: rgba(0, 207, 224);
+    border-color: rgb(255, 225, 175);
+}
+
+.btn--bl:hover {
+    background-color: rgb(255, 225, 175);
+    border-color: rgba(0, 207, 224);
+}
+
+.btn--yw {
+    background-color: rgb(236, 183, 0);
+    border-color: rgb(255, 225, 175);
+}
+
+.btn--yw:hover {
+    background-color: rgb(255, 225, 175);
+    border-color: rgb(236, 183, 0);
+}
+
+.btn--gr {
+    background-color: green;
+    border-color: rgb(255, 225, 175);
+}
+
+.btn--gr:hover {
+    background-color: rgb(255, 225, 175);
+    border-color: green;
+}
+
+
+
 /*-------Footer Page-------*/
 .contact-container {
-    height: auto;
+    height: 600px;
     padding: 50px;
     margin-bottom: 10px;
+   align-items: center;
 }
 
+.center-form {
+    max-width: 400px;
+    margin: 5px;
+    position: relative;
+}
+
+.form-control {
+    margin: 5px;
+}
 /*-------Footer Page-------*/
 .bg-footer-color {
-    background-color: green;
+    background-color: rgba(28, 173, 0);
 }
 
 .foot-row-align {
@@ -500,8 +595,8 @@ padding-right: 10px;
 }
 
 .media-links li a i {
-    color: rgba(224, 172, 26);
-    font-size: 25px;
+    color: rgb(255, 225, 175);
+    font-size: 30px;
     line-height: 30px;
     text-align: center;
     min-height: 50px;
@@ -514,5 +609,5 @@ padding-right: 10px;
 }
 
 .media-links li a i:hover {
-    color: ivory;
+    color: rgba(255, 44, 14 );
 }

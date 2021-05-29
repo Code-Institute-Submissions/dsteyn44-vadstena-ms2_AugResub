@@ -1,3 +1,5 @@
+
+//code from EMAILJS
 function sendMail(contactForm) {
     emailjs.send("service_j32l2w9","template_o51c1wr", {
         "from_name": contactForm.name.value,
@@ -11,6 +13,6 @@ function sendMail(contactForm) {
         function(error) {
             console.log("FAILED", error);
         }
-    );
-    return false;  // This is used to 
+    ); 
+    return false;
 } 
