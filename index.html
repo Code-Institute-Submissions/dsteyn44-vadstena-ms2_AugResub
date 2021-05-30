@@ -9,23 +9,18 @@
         integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
     <link rel="stylesheet" href="assets/css/style.css" type="text/css">
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
-        </script>
-        <script type="text/javascript">
-            (function () {
-                emailjs.init("user_RlwLiQrtBYFAbn2bBtPrh");
-            })();
-        </script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js">
+    </script>
+    <script >
+        (function () {
+            emailjs.init("user_RlwLiQrtBYFAbn2bBtPrh");
+        })();
+    </script>
 </head>
-
 <body>
     <!--The Header-->
     <nav class="navbar navbar-expand-lg bg-navbar" style="padding-bottom: 0;" id="home">
-        <a class="navbar-brand text-navbar" href="#"><span>
-                <h1>Vadstena Guide</h1>
-            </span>
-            <!--<div id="tm-sm">™</div>-->
-        </a>
+        <h1>Vadstena Guide</h1>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span><svg width="50px" height="50px" viewBox="0 0 3371 2384" version="1.1"
@@ -53,7 +48,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
                 <li class="nav-item active">
-                    <a class="nav-link" href="#">
+                    <a class="nav-link" href="index.html#home">
                         <h5 class="nav-text">Home!</h5>
                     </a>
                 </li>
@@ -70,10 +65,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="index.html#any-questions">
                         <h5 class="nav-text">Any Questions?</h5>
-                    </a>
+                        </a>
                 </li>
             </ul>
-        </div>
         </div>
     </nav>
     <!--Home Page-->
@@ -104,7 +98,8 @@
             </div>
         </div>
         <div class="container pt-3">
-            <div class="col-12 col-home-size home-text"><a href="index.html#explore">Explore</a><span> our
+            <div class="col-12 col-home-size home-text"><a href="index.html#explore"
+            >Explore</a><span> our
                     quaint
                     town by the lake</span>
             </div>
@@ -137,7 +132,7 @@
                         patients. Today, some of the oldest buildings present the Vadstena Hospital
                         Museum.</span></span>
             </div>
-            <!-----galllery c/o W3 schools-->
+            <!--galllery c/o W3 schools-->
         </div>
         <div class="row">
             <div class="column">
@@ -154,9 +149,9 @@
             </div>
         </div>
     </div>
-    <div><a href="index.html#story" class="head-text">Go Home!</a></div>
+    <div><a href="index.html" class="back-home-text">Take me Home!</a></div>
     <!--Explore Page-->
-    <section>
+    <div>
         <div class="container-fluid bg-grn ">
             <header>
                 <div id="explore" class="head-text">Explore!</div>
@@ -169,27 +164,29 @@
                 </div>
             </div>
             <div class="btn-exp-container" style="justify-content: center;">
-                <!---- <div class="btn-group" role="group" aria-label="Basic example">
+                <!--<div class="btn-group" role="group" aria-label="Basic example">
   <button type="button" id="btn-site" name="btn-site" aria-label="" class="btn btn-secondary">Must See!</button>
   <button type="button" id="btn-stay" name="btn-stay" aria-label="" class="btn btn-secondary">Middle</button>
   <button type="button" id="btn-eat" name="btn-eat" aria-label="" class="btn btn-secondary">Middle</button>
   <button type="button" id="btn-shop" name="btn-shop" aria-label="" class="btn btn-secondary">Right</button>
 </div>-->
                 <div class="d-grid gap-4 d-md-block mx-auto">
-                    <button class="btn btn-primary btn-exp-text btn--bl" id="btn-site" name="btn-site" aria-label="" type="button">Must
+                    <button class="btn btn-primary btn-exp-text btn--bl" id="btn-site" name="btn-site" aria-label=""
+                        type="button">Must
                         See!</button>
-                    <button class="btn btn-primary btn-exp-text btn--yw" id="btn-stay" name="btn-stay" type="button">Stay!</button>
-                    <button class="btn btn-primary btn-exp-text btn--rd" id="btn-eat" name="btn-eat" aria-label="noopener"
-                        type="button">Eat!</button>
-                    <button class="btn btn-primary btn-exp-text btn--gr" id="btn-shop" name="btn-shop" aria-label="noopener"
-                        type="button">Shop!</button>
+                    <button class="btn btn-primary btn-exp-text btn--yw" id="btn-stay" name="btn-stay"
+                        type="button">Stay!</button>
+                    <button class="btn btn-primary btn-exp-text btn--rd" id="btn-eat" name="btn-eat"
+                        aria-label="noopener" type="button">Eat!</button>
+                    <button class="btn btn-primary btn-exp-text btn--gr" id="btn-shop" name="btn-shop"
+                        aria-label="noopener" type="button">Shop!</button>
                 </div>
             </div>
         </div>
-        </div>
-        <div><a href="index.html#home" class="head-text">Go Home!</a></div>
-    </section>
-    <!------------ Contact Page-- I worked this over with the Code institute video---->
+        <div><a href="index.html" class="back-home-text">Take me Home!</a></div>
+    </div>
+    <!-- Contact Page 
+    I worked this over with the Code institute video-->
     <section class="container-fluid contact-container">
         <div>
             <div id="any-questions" class="head-text">Any Questions?</div>
@@ -197,17 +194,18 @@
         </div>
         <div class="center-form mx-auto">
             <form onsubmit="return sendMail(this);">
-                <input type="text" name="name" class="form-control alt-text" id="fullname" placeholder="Name" required />
-                <input type="text" name="emailaddress" class="form-control alt-text" id="emailaddress" placeholder="Email"
+                <input type="text" name="name" class="form-control alt-text" id="fullname" placeholder="Name"
                     required />
+                <input type="text" name="emailaddress" class="form-control alt-text" id="emailaddress"
+                    placeholder="Email" required />
                 <textarea rows="5" name="projectsummary" class="form-control alt-text" id="projectsummary"
                     placeholder="Let us know here how we can help you?" required></textarea>
-                <button type="submit" class="btn btn-success center-block" onclick="myFunction()" >Submit
+                <button type="submit" class="btn btn-success center-block" onclick="myFunction()">Submit
                 </button>
             </form>
         </div>
-        <div><a href="index.html#home" class="head-text">Go Home!</a></div>
     </section>
+    <div><a href="index.html" class="back-home-text">Take me Home</a></div>
     <!--Footer-->
     <footer id="foot-container" class=" container-fluid bg-footer-color">
         <div class="row">
@@ -235,12 +233,11 @@
             </div>
         </div>
     </footer>
-   <!--Script below comes form W3schools Alert- good for defensive design-->
+    <!--Script below comes form W3schools Alert- good for defensive design-->
     <script>
-function myFunction() {
-  alert("Tack så mycket!Thanks for sending us an email");
-}
-</script>
+        function myFunction() {
+            alert("Tack så mycket!Thanks for sending us an email");
+        }
     </script>
     <!--Scripts-->
 

@@ -1,4 +1,9 @@
 # Vadstena Guide
+
+![mock-up](readme-files/mock-up.png)
+
+Welcome to Vadstena Guide! This is a small interactive website, suited more for the person who is travelling to Vadstena and would like a quick guick to the town. 
+
 ## UX
  
 ### Strategy:
