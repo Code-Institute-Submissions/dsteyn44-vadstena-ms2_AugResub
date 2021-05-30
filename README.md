@@ -9,43 +9,59 @@ It is google map capable, with the current time and weather. There is also
  
 ### Strategy:
 
- Target market: 
+ Target market: Aiming for the all travellers despite age that is the reason for the bold colors. Usually this is B2B but I have gone with a B2C strategy as travellers want quick responses when visiting a place. 
 
 
 #### Client Goals
 - 
 
 #### First time User Stories
-- As a first time User I want to be able to hear the bands music on the first page so that that I decide to follow.
-- As a first time User I want to see where they are playing and the dates so I can see if I am  able to go view the concert.
-- As a first time User I want to see what the band is about, who they are so I can decide this is something that i may like.
-- As a first time User I want to navigate easily throughout the site so that I can get to the pages efficently. 
+- As a user, I want to be able to access the website on a desktop but mainly mobile devices and tablets, so that I won't be restricted from which device I can access the site.
+- AAs a user, I want to be able to follow or connect with the owner of the website on social media, so I can get more information about the town.
+- As a user, I would like to know what the city has to offer, so that I can adjust it to my needs and interests.
+- as a user I would like to get a better understanding of the towns history.
+- As a user, I want to have an access to the map of the city with various places, so I can visually see their location.
+- As a user, I want to be able to contact the site owner, so I will be able to share my feedback regarding the website or ask about planning my visit and get some more advice and recommendations.
 
 #### Frequent User
 - As a frequent user I want updates so that I can visit the website and it will keep me interested.
 
-#### Festival organiser/ Concert organiser
+#### Toursit Representative 
+- As a toursit representative I want a stand-out website so that users can easily navigate.
+- As a toursit representative I want a travellers to be able to get hold of me via email..
 
 
 #
 
-## Features
+### Features
 
-I changed the features from the wireframes as they did not work very well with the responsiveness. Also I change the name of the gallery from "My Army" to "Skål" - which is more of a postive thank you to the fans. I left out the page for the narrative or storyline "The Legend" and just added it to the information about the band.
+#### Header
+- The Town's Logo: Always on the left-hand side to get the users attention.
+Navigation Bar: Too include links to Home button, OUr Story, Explore. It must also include a "Contact Us" link. A custom-styled (in this case I styled it to the unofficial logo of the town - five dots) hamburger styled toggle will be added for small screen sizes so that it will be easier to navigate.
 
-Header
-
-The Footer 
-
+#### The Footer 
 - Links to social media platforms that are related to the product. Must be fixed and visible at all times so that the user can easily get to it. 
 
-The Home Page 
+#### The Home Page 
+- Should have the temperature and weather in a type-of widget form.
+- Should have a background that has a hero shot of the castle.
+- Should have a hero text that has a inviting statement ("Explore" in this case is a link too). 
 
-Our Story Page
+#### Our Story Page
+- Should have historical information. I tried a timeline and accordian in this case and it did not work.
+- Should have historical figures. I did have a text overlay to explain which each person and image was unfortunately ran out of time to perfect it. 
 
-Explore Page
+#### Explore Page
+- this is an interactive map with buttons you can click on to show you "Must See" sites, "Eat!" restaurants, "Stay" hoteis, "Shop" where you can shop.
+- There will be a marker to show you where Vadstena is in Sweden and when you click on it there is an info window inviting you to explore.
+- Each of the buttons has markers showing an image of the site, as well as some info text.
+
+#### Any Questions? (contact page)
+- Basically an email portal to contact the tourist bureau.
 
 ## Features Left to Implement
+- I orginally had a slider with a days of the week and in fact it worked rather well. It scroll X, which I know is not good for UI  and hence i disposed of it but wit would have been a good feature to add.
+- Also would likew to make the history page nore inbteractive with a time line etc.
 
 ### Structure:
 
@@ -54,31 +70,25 @@ Explore Page
 
 ## Skeleton
 The wireframes were designed using [Balsamiq](https://balsamiq.com/). 
-   Desktop   |    Tablet    |    Mobile    |
-|    :----:    |     :----:   |    :----:    |
-|[Home Page](wireframes/desktop-home.png)|[Home Page](wireframes/tablet-home.png)|[Home Page](wireframes/mobile-home.png)|
-|[The Fanwall Page](wireframes/desktop-fan-wall.png)|[The Fanwall Page](wireframes/tablet-fan-wall.png)|[The Fanwall Page](wireframes/mobile-fan-wall.png)|
-|[Fail Page](wireframes/desktop-fail.png)|[Fail Page](wireframes/tablet-fail-page.png)|[Fail Page](wireframes/mobile-fail-page.png)|
 
+![mock-up](readme-files/wireframe-MS2.png)
 #
+
 ## Surface
+- Mainly i wanted to use bright colors to attract the attention of the traveller and make it fun. The structure of the site was a basic single path with no branches to make it as simple as possible.
 
 #### Colours
+- I used a variation of Red / Green/ Blue/ Yellow.
 
-Home page
-
-
-Our Story page
- 
-
-Fail page
 
 
 #### Typography
+-  Berkshire Swash - this was used as the main themed font.
+- Rubik was used as mu secondary font.  
 
 
 #### Images
-
+- The images I used were either png. and some jpg. But this time I experimented with <svg>’s .
 
 ## Technologies Used
 
@@ -103,7 +113,7 @@ Fail page
 
 ## Testing
 
-View the testing [here](Testing.md).
+View the testing [here](testing.md).
 
 #
 ## Deployment
@@ -128,14 +138,73 @@ View the testing [here](Testing.md).
 - Press enter and the local clone will be created.
 
 ### Google maps:
+See maps.js
 
-- Under the repository’s name, click Clone or download.
-- In the Clone with hTTPS section, copy the given URL.
-- In your IDE of choice, open Git Bash.
-- Change the current working directory to the location where you want the cloned directory to be made.
-- Type git clone, and then paste the URL copied from GitHub.
-- Press enter and the local clone will be created.
+### Email.js:
+
+Setting up EmailJS account ** Note that Email JS is different than the version on the Code institutes Video.
+
+first go to EmailJS.com and register for a free account.
+Go to “Add New Service” and click. 
+Choose an account. I have a Gmail account so I chose that. 
+Click on Connect Account.
+A OAuth verification will come to say what EmailJS is allowing you to do.
+Check on the box to send a test email. 
+And you should recieve an email in your email account - in this case it is my Gmail account.  
+Now we need to make an email template.
+Go back into EmailJS.com and click on Email Template.
+Choose a blank template.
+A default email template comes up.
+Go to setting to type template name- you will see your template ID comes up automatically.
+Then click back to “content” and under “Subject” place the subject for each email we receive. In this case it will be “Can you you help Me?”
+Then we will place where the email will be sent to - in this case my email address in Gmail.
+Uncheck the “Use Default Email Address” box.
+(actually it will not allow you to uncheck the “Use Default Email Address” box before saving and thus sending a test email - which needs to be done next.
+That is as far was go now.
+We will then send a test email.
+And Viola- it arrive an email from me in my Gmail account.
+
+No we are going to add the Software development kit That EmailJS provides to connect to our index.html.
+When we go back to the EmailJS webpage we see some Javascript code
+emailjs.send(“service_j32l2w9”,”template_o51c1wr”);*** But actually this is not the same as the code in the video. That code you can get at SDK> emails.send
+
+When we close the window down we will see that our Template name - in this case “Dan” is up ate the top.
+
+
+Now go to Documentation at the top on the page.
+
+
+Then on the side bar go down to SDK installation. Below is what you will see. (Not that in the video it says Javascript Library and in the real life it says SDK)
+You will need to paste this code before the closing </head> tag.
+Then we need to get our user ID which by noting is to click on the integration page.
+See where it says user ID - copy and paste that in the script above where it says “YOUR_USER_ID”. Note to click on the tags.
+Now we add the code below that we found before .
+   emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+Note again thesis not like the video.
+
+Now we add the code to under the emailjs.init. code in the <script> element in your index.html file.
+Then you add the service code ie: service_j32l2w9 ( you received earlier and your) and your template ID (Dan in this case).
+We can also add the project information after { name: ‘Daniel’ notes: ‘The information I want is…’} * note best to use apostrophes instead of “. 
+Now though, we want to edit our email template so that we can pass in parameters and have some content in the email that's provided.
+Now we have to passion some variables in to our form.
+Go to To Email on the left hand side of your email template and write in {{from_email}}
+then go to content and add “{{tourist_help}} - these are placeholder names.
+Then save and go to test it and when you write under the Template Parameters you will see the {{from_email}} As below.
+
+
+Fill in the information and send and you will receive an email result.
+Now we will hook up our project with this.
+We now go to the top of our index.html.
+
+we will scroll down past the <footer> tag and paste this. 
+Add <script src=“./assets/js/sendmail.js.”><script>
+Create a sendmail.js file in your repo. then go into this enter console.log(“Hello”);
+Refresh your browser and inspect the console - it should say “Hello” if connected.
+then go into sendmail.js and add the following
+
 #
+
+
 ## Credits
 
 ### Content
@@ -148,6 +217,7 @@ View the testing [here](Testing.md).
 
 
 ### Acknowledgments
+- Kloster Hotellet in Vadsteana
 - Precious Ijege for the mentor guidance and support.
 - The Code Institute tutor team, and specially Jo, for their help and patience.
 - My wife Sofia and children August and Adam.
