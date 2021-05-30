@@ -1,8 +1,9 @@
 # Vadstena Guide
 
-![mock-up](readme-files/mock-up.png)
+![mock-up](readme-files/mocks-up.png)
 
-Welcome to Vadstena Guide! This is a small interactive website, suited more for the person who is travelling to Vadstena and would like a quick guick to the town. 
+Welcome to Vadstena Guide! This is a small interactive website, suited more for the person who is travelling to Vadstena and would like a quick look at the toueto the town. The idea is for it to look like a traditional guide book like "Frommers" etc. 
+It is google map capable, with the current time and weather. There is also  
 
 ## UX
  
