@@ -25,7 +25,7 @@ function initMap() {
     zoom: 6,
   });
 //addTownInfo();
-const townMark = {"lat": 58.448, "lng": 14.889, "name": "Vadstena", "icon":'assets/images/vadstena-pointer.svg',};//figured out how to a my icon -took me forever!
+const townMark = {"lat": 58.448, "lng": 14.889, "name": "Vadstena", "icon":'assets/images/vmark.svg',};//figured out how to a my icon -took me forever!
 
 //Used beacon for my name for the marker
 const beacon = new google.maps.Marker({
@@ -37,7 +37,7 @@ const beacon = new google.maps.Marker({
   });
 //making the call for the event listener// 
 const infowindow = new google.maps.InfoWindow ({
-content:'<h2 style="color: black;">Vadstena</h2>'+ '<p>The beautiful city</p>' + '<img src="assets/images/town.png">',//infomation for the info-window
+content:'<h2 style="color: black;">Vadstena</h2>'+ '<p style="color: black;"> Hej! Welcome to the beautiful town of Vadstena in Östergötland Sweden. There is so much to see so click on any of the portals to get going.</p>' + '<img src="assets/images/town.png">',//infomation for the info-window
 });
 //almost gave up on the event listener!! 
 beacon.addListener("click", () => {
@@ -295,7 +295,7 @@ document.getElementById("btn-stay").addEventListener("click",stayMap);
 
 var labels = {
   hotels: {
-    label: 'assets/images/house.png',
+    label: 'assets/images/housepng.png',
   },
 };
 //Add the information for the sites. we have defined as markerSite.
