@@ -119,6 +119,14 @@ nav a span h1 {
     color: rgb(255, 225, 175);
 }
 
+@media (max-width: 767.98px) { 
+nav a span h1 {
+    font-size: 20px;
+}
+}
+
+
+
 #nav-home-text {
   color: rgb(255, 225, 175);  
 }
@@ -484,30 +492,48 @@ align-items: center;
  border-radius: 10px;
  padding-left: 30px;
  padding-right: 30px;
+ margin-left: 10px;
+ margin-right: 10px;
 }
 
 
 /*-------Explore button container-------*/
 
+.btn-primary {
+    width: 100px;
+    height: 100px;
+    margin: 4px
 
-.row-btn {
-    display: flex;
 }
 
 .btn-exp-container {
     padding-top: 5px;
     padding-bottom: 5px;
     width: 100%;
-    height: 100px;
-}
-
-.btn-col {
- flex: 25%;
- padding: 10px;
+    height: 160px;
+    align-items: center;
 }
 
 .btn-exp-text {
 color: rgb(255, 225, 175);
+font-size: 20px;
+}
+
+
+@media (max-width: 575.98px) { 
+
+.btn-primary {
+    width: 75px;
+    height: 75px;
+    margin: 4px;
+    border-radius: 50%;
+
+}
+
+.btn-exp-text {
+color: rgb(255, 225, 175);
+font-size: 15px;
+}
 }
 
 .btn--rd {
@@ -518,6 +544,7 @@ color: rgb(255, 225, 175);
 .btn--rd:hover {
     background-color: rgb(255, 225, 175);
      border-color: rgba(255, 44, 14);
+     color:  rgba(255, 44, 14); 
 }
 
 .btn--bl {
@@ -528,6 +555,7 @@ color: rgb(255, 225, 175);
 .btn--bl:hover {
     background-color: rgb(255, 225, 175);
     border-color: rgba(0, 207, 224);
+    color:  rgba(20, 207, 224);
 }
 
 .btn--yw {
@@ -538,23 +566,76 @@ color: rgb(255, 225, 175);
 .btn--yw:hover {
     background-color: rgb(255, 225, 175);
     border-color: rgb(236, 183, 0);
+    color:  rgba(236, 183, 0);
 }
 
 .btn--gr {
-    background-color: green;
+    background-color: rgba(28, 173, 0);
     border-color: rgb(255, 225, 175);
 }
 
 .btn--gr:hover {
     background-color: rgb(255, 225, 175);
-    border-color: green;
+    border-color: rgba(28, 173, 0);
+    color:  rgba(28, 173, 0);
+}
+
+@media (max-width: 575.98px) { 
+.btn--rd {
+    background-color: rgba(255, 44, 14);
+    border-color: rgb(255, 225, 175);
+}
+
+.btn--rd:hover {
+    background-color: rgb(255, 225, 175);
+     border-color: rgba(255, 44, 14);
+     color:  rgba(255, 44, 14); 
+}
+
+.btn--bl {
+    background-color: rgba(0, 207, 224);
+    border-color: rgb(255, 225, 175);
+}
+
+.btn--bl:hover {
+    background-color: rgb(255, 225, 175);
+    border-color: rgba(0, 207, 224);
+    color:  rgba(20, 207, 224);
+}
+
+.btn--yw {
+    background-color: rgb(236, 183, 0);
+    border-color: rgb(255, 225, 175);
+}
+
+.btn--yw:hover {
+    background-color: rgb(255, 225, 175);
+    border-color: rgb(236, 183, 0);
+    color:  rgba(236, 183, 0);
+}
+
+.btn--gr {
+    background-color: rgba(28, 173, 0);
+    border-color: rgb(255, 225, 175);
+}
+
+.btn--gr:hover {
+    background-color: rgb(255, 225, 175);
+    border-color: rgba(28, 173, 0);
+    color:  rgba(28, 173, 0);
 }
 
 
 
-/*-------Footer Page-------*/
+
+
+
+}
+
+
+/*-------Contact US Page-------*/
 .contact-container {
-    height: 600px;
+    height: 700px;
     padding: 50px;
     margin-bottom: 10px;
    align-items: center;

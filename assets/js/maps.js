@@ -76,7 +76,7 @@ document.getElementById("btn-site").addEventListener("click",siteMap);
 
 var points = {
   site: {
-    icon: 'assets/images/site.png'
+    icon: 'assets/images/pillarpng.png'
   },
 };
 //Add the information for the sites. we have defined as markerSite.
@@ -95,7 +95,7 @@ var markerSite = [
 {
     placeName: 'Vadstena Castle',
     information: 'The Castle was originally built by King Gustav I in 1545 as a fortress to protect Stockholm from enemies approaching from the South. Since 1620, the castle has been very well preserved, and is one of Sweden\'s best examples of Renaissance architecture. Vadstena Castle was a royal palace until 1716, when the royal family lost interest in it after which it became a storage barn for grain.',
-    image: '<img src="assets/images/castle-air.png" style="width: 25px, height: 25px;">',
+    image: '<img src="assets/images/new-castle.png" style="width: 25px, height: 25px;">',
     LatLng: [{
       lat: 58.44601892145026,
       lng: 14.883571690993277
@@ -106,7 +106,7 @@ var markerSite = [
 {
     placeName: 'Vadstena Town Hall',
     information: 'The Oldest town hall in Sweden and believed to be the 3rd oldest in Europe. The town hall construction date is referred to as 1490 and was the seat of the local government until the 1970s.',
-    image: '<img src="assets/images/town-hall.png" style="width: 25px, height: 25px;">',
+    image: '<img src="assets/images/hall.png" style="width: 25px, height: 25px;">',
     LatLng: [{
       lat: 58.447198953180575,
       lng: 14.88761373316239
@@ -128,7 +128,7 @@ var markerSite = [
 {
     placeName: 'Vadstena Abbey',
     information: 'The Abbey of Our Lady and of St. Bridget, more commonly referred to as Vadstena Abbey, situated on Lake Vättern in the Diocese of Linköping, Sweden, was the motherhouse of the Bridgettine Order.The abbey started on one of the farms donated to it by the king, but the town of Vadstena grew up around it. It was active from 1346 until 1595. Today it is one of the biggest attractions.',
-    image: '<img src="assets/images/church.png" style="max-width: 100%, height: 25px;">',
+    image: '<img src="assets/images/kchurch.png" style="max-width: 100%, height: 25px;">',
     LatLng: [{
       lat: 58.450810760361286,
       lng: 14.890794120035338
@@ -185,7 +185,7 @@ document.getElementById("btn-eat").addEventListener("click", restMap);
 
 var icons = {
   restaurants: {
-    icon: 'assets/images/food.png',
+    icon: 'assets/images/dinePng.png',
   },
 };
 //Add the information for the sites. we have defined as markerSite.
@@ -295,7 +295,7 @@ document.getElementById("btn-stay").addEventListener("click",stayMap);
 
 var labels = {
   hotels: {
-    label: 'assets/images/stay.png',
+    label: 'assets/images/house.png',
   },
 };
 //Add the information for the sites. we have defined as markerSite.
@@ -395,7 +395,7 @@ document.getElementById("btn-shop").addEventListener("click",shopMap);
 
 var tabs = {
   shops: {
-    tab: 'assets/images/shop.png',
+    tab: 'assets/images/presentpng.png',
   },
 };
 //Add the information for the sites. we have defined as markerSite.
