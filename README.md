@@ -17,7 +17,7 @@ It is google map capable, with the current time and weather. There is also
 
 #### First time User Stories
 - As a user, I want to be able to access the website on a desktop but mainly mobile devices and tablets, so that I won't be restricted from which device I can access the site.
-- AAs a user, I want to be able to follow or connect with the owner of the website on social media, so I can get more information about the town.
+- As a user, I want to be able to follow or connect with the owner of the website on social media, so I can get more information about the town.
 - As a user, I would like to know what the city has to offer, so that I can adjust it to my needs and interests.
 - as a user I would like to get a better understanding of the towns history.
 - As a user, I want to have an access to the map of the city with various places, so I can visually see their location.

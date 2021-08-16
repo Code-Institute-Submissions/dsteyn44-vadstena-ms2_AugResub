@@ -6,7 +6,7 @@
 ## Validators used: 
 - Jigsaw - I used this for CSS verification. [Jigsaw validator](https://jigsaw.w3.org/).
 - Nu W3 validator - I used this for HTML verification. [W3 validator](https://validator.w3.org/).
-- 
+
 ### Proof of final validation:
 
 ### HTML:

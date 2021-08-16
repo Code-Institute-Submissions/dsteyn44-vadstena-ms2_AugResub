@@ -23,52 +23,12 @@ body {
   font-size: 20px;
 }
 
-/*----- I have tried a hover (which was successful but annoying and now an accordian which does not work
-/*accordion {
-  background-color: #eee;
-  color: #444;
-  cursor: pointer;
-  padding: 18px;
-  width: 100%;
-  border: none;
-  text-align: left;
-  outline: none;
-  font-size: 15px;
-  transition: 0.4s;
-}
-
-.active, .accordion:hover {
-  background-color: #ccc;
-}
-
-.accordion:after {
-  content: '\002B';
-  color: #777;
-  font-weight: bold;
-  float: right;
-  margin-left: 5px;
-}
-
-.active:after {
-  content: "\2212";
-}
-
-.panel {
-  padding: 0 18px;
-  background-color: #FF9F55;
-  max-height: 100vh;
-  overflow: hidden;
-  transition: max-height 0.2s ease-out;
-}
-
-
-
 /*-------Background and color-------*/
 /*Changed the color of the navbar*/
 .bg-navbar {
     background-color: rgba(255, 44, 14, .8);
 }
-/*-------main image-------*//* - i decidef to fixed it */
+/*-------main image-------*/
 .bg-home-container {
     background: url('../images/hero-castle\ .png') no-repeat center center fixed;
     background-size: cover;
@@ -78,20 +38,6 @@ body {
     justify-content: center;
     z-index: -1;
 }
-
-
-/*--@media (min-width: 575.98px) { 
-
-.bg-home-container {
-    background: url('../images/hero.png') no-repeat center center;
-    background-size: cover;
-    filter: orange;
-    height: 120vh;
-    min-width: 100%;
-    overflow: hidden;
-}
-}
-*/
 
 .bg-grn {
   background-color: rgba(28, 173, 0);
@@ -156,27 +102,8 @@ font-size: 15px;
     box-shadow: none;
 }
 
-/*-----##################################  Home Page #######################################-------*/
 
 /*-----##################################  Weather #######################################-------*/
-
-/*----previous attempt at a container did not work- moved to jumbotron instead---*
-.climate-container { 
-height: 50vh;
-margin: 10px;
-padding: 10px;
-border-radius: 10px;
-background-color: rgba(28, 173, 0, .8);
-display: grid;
-place-content: center;
-grid-template-columns: 1fr;
-}
-/*
-.climate-box {
- background-color: grey;
- padding: 20px;
- border: 10px solid red;
-}*/
 
 .climate-container{
     background-color: rgba(28, 173, 0, .8);
@@ -330,23 +257,13 @@ color: ivory;
 }
 
 
-/*-----Slider-------*/
-
-/*-------Our Story Page------- accordian taken from W3school
-I also used CSS grid for the accordian */
-/*Style the buttons that are used to open and close the accordion panel */
-
-/*.responsive {
-  width: 100%;
-  height: auto;
-}*/
+/*-------Our Story Page------- accordian taken from W3school*/
 
 .story-container {
 margin-top: 100px;
 padding-left: 10px;
 padding-right: 10px;
 }
-
 
 /*-----History Gallery------*/
 
