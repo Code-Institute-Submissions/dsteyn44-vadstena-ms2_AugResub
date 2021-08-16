@@ -197,14 +197,14 @@
             <h5 class="uppercase text-center alt-text">Contact us and We can be your guide!</h5>
         </div>
         <div class="center-form mx-auto">
-            <form name="myForm" onsubmit="return validateForm(); sendMail(this);">
+            <form name="myForm" onsubmit="return sendMail(this);">
                 <input type="text" name="name" class="form-control alt-text" id="fullname" placeholder="Name"
                     required />
                 <input type="text" name="emailaddress" class="form-control alt-text" id="emailaddress"
                     placeholder="Email" required />
                 <textarea rows="5" name="projectsummary" class="form-control alt-text" id="projectsummary"
                     placeholder="Let us know here how we can help you?" required></textarea>
-                <button type="submit" class="btn btn-success center-block" onclick="myFunction()">Submit
+                <button type="submit" class="btn btn-success center-block" onclick="validateForm()">Submit
                 </button>
             </form>
         </div>
@@ -239,10 +239,6 @@
     </footer>
     <!--Script below comes form W3schools Alert- good for defensive design-->
     <script>
-        function myFunction(response) {
-            alert("Tack så mycket!Thanks for sending us an email");
-        }
-        
         function validateForm() {
             let x = document.forms["myForm"]["name"].value;
             if (x == "") {
