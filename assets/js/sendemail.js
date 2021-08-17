@@ -9,10 +9,11 @@ function sendMail(contactForm) {
     .then(
         function(response) {
             console.log("SUCCESS", response);
-            alert ("tack sa mycket!");
+            alert ("tack sa mycket! Thank you");
         },
         function(error) {
             console.log("FAILED", error);
+            alert ("I am afraid your email did not go through")
         }
     ); 
     return false;   

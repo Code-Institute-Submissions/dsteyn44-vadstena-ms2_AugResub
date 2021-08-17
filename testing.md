@@ -57,6 +57,8 @@ Action: I had to remove some of the code in the <svg> to make allow it to be acc
 The dots.svg would not change color when I added it to HTML as an image so I copied the sag code and added it directly into the <span> that I used to hold the hamburger toggle icon. Here I was able to manipulate the <svg> to the ivory I wanted to use. 
 Action:
 Slider Bug - when I added the slider it disappears when you respond vertically.
+
+
 ## User stories
 
 ## Side Notes
