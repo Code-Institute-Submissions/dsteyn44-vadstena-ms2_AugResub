@@ -45,3 +45,6 @@ Action: I had to remove some of the code in the "svg" to make allow it to be acc
 - Images in the history section was showing an error in the console. Action: after working with student support and checking the HTML it was determined an issue with the URL link to the right directory. A "/" was added which should not have been there.
 - No validation to the contact form. This was added with some Javascript using code from W3 webschools. An alert was added to the sendemails.js file to inform the user that the email had either been sent or not. 
 
+### Known Bugs
+- error still showing in console for Devtools.DevTools failed to load source map: Could not load content for chrome-extension://fheoggkfdfchfphceeifdbepaooicaho/sourceMap/chrome/iframe_handler.map: HTTP error: status code 404, net::ERR_UNKNOWN_URL_SCHEME.
+- Tutor support was contacted andit was determined that the computer I was using was not incognito. In addition this was found in google The ERR_UNKNOWN_URL_SCHEME error is commonly because of your browser issue . There's no application on your device which can handle that particular action. It is a Chromium bug . In Chrome version 40 and up, this bug has resurfaced, but only if you are manually entering the URL of the redirect page in the address bar.
