@@ -15,9 +15,6 @@ var cenCoords = {
     lng: 14.889
 };
 
-//window.onload = function () {
-//initMap();
-//};
 //We are calling this function on the window.load above
 function initMap() {
   const map = new google.maps.Map(document.getElementById("map"), {

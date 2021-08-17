@@ -2,8 +2,8 @@
 
 ![mock-up](readme-files/mocks-up.png)
 
-Welcome to Vadstena Guide! This is a small interactive website, suited more for the person who is travelling to Vadstena and would like a quick look at the toueto the town. The idea is for it to look like a traditional guide book like "Frommers" etc. 
-It is google map capable, with the current time and weather. 
+Welcome to Vadstena Guide! This is a small interactive website, suited more for the person who is travelling to Vadstena and would like a quick look at the tourism of the town. The idea is for it to look like a traditional guide book like "Frommers" etc. 
+It is google map capable, with the current time and weather. Users can also send an email to the bureau if they are lost or would like any information.
 
 **[View the live project here.](https://dsteyn44.github.io/vadstena-ms2/)
 
@@ -12,10 +12,6 @@ It is google map capable, with the current time and weather.
 ### Strategy:
 
  Target market: Aiming for the all travellers despite age that is the reason for the bold colors. Usually this is B2B but I have gone with a B2C strategy as travellers want quick responses when visiting a place. 
-
-
-#### Client Goals
-- 
 
 #### First time User Stories
 - As a user, I want to be able to access the website on a desktop but mainly mobile devices and tablets, so that I won't be restricted from which device I can access the site.
@@ -30,7 +26,7 @@ It is google map capable, with the current time and weather.
 
 #### Toursit Representative 
 - As a toursit representative I want a stand-out website so that users can easily navigate.
-- As a toursit representative I want a travellers to be able to get hold of me via email..
+- As a toursit representative I want a travellers to be able to get hold of me via email.
 
 
 #
@@ -54,20 +50,21 @@ Navigation Bar: Too include links to Home button, OUr Story, Explore. It must al
 - Should have historical figures. I did have a text overlay to explain which each person and image was unfortunately ran out of time to perfect it. 
 
 #### Explore Page
-- this is an interactive map with buttons you can click on to show you "Must See" sites, "Eat!" restaurants, "Stay" hoteis, "Shop" where you can shop.
+- this is an interactive map with buttons you can click on to show you "Must See" sites, "Eat!" restaurants, "Stay" hotels, "Shop" where you can shop.
 - There will be a marker to show you where Vadstena is in Sweden and when you click on it there is an info window inviting you to explore.
 - Each of the buttons has markers showing an image of the site, as well as some info text.
 
 #### Any Questions? (contact page)
 - Basically an email portal to contact the tourist bureau.
+- Users can send an email to the bureau with their email address.
 
 ## Features Left to Implement
 - I orginally had a slider with a days of the week and in fact it worked rather well. It scroll X, which I know is not good for UI  and hence i disposed of it but wit would have been a good feature to add.
-- Also would likew to make the history page nore inbteractive with a time line etc.
+- Also would likew to make the history page nore interactive with a time line etc.
 
-### Structure:
-
-
+## Structure:
+- The structure is just a single scroll page with links to the various "pages". 
+- A basic single path with no branches to make it as simple as possible.
 #
 
 ## Skeleton
@@ -77,20 +74,18 @@ The wireframes were designed using [Balsamiq](https://balsamiq.com/).
 #
 
 ## Surface
-- Mainly i wanted to use bright colors to attract the attention of the traveller and make it fun. The structure of the site was a basic single path with no branches to make it as simple as possible.
+- Mainly I wanted to use bright colors to attract the attention of the traveller and make it fun. 
 
 #### Colours
 - I used a variation of Red / Green/ Blue/ Yellow.
 
-
-
 #### Typography
 -  Berkshire Swash - this was used as the main themed font.
-- Rubik was used as mu secondary font.  
-
+- Rubik was used as my secondary font.  
 
 #### Images
-- The images I used were either png. and some jpg. But this time I experimented with <svg>’s .
+- The images I used were either png. and some jpg. But this time I experimented with "svg"’s. The "svg"’s were a little tough to use in googlemaps andin the javascript files, although they did render a better crisp image. 
+- Therefore for the markers PNG´s were used because they had less 
 
 ## Technologies Used
 
